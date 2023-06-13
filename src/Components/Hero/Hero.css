@@ -1,0 +1,197 @@
+.background[_ngcontent-nxk-c11] {
+    padding-top: 40px;
+    background-size: contain !important;
+    background: transparent url(/src/assets/banner.png) no-repeat !important;
+}
+
+.header-logo[_ngcontent-nxk-c11] {
+    position: absolute;
+    top: 32px;
+    left: 48px;
+}
+
+.title-txt {
+    color: #d5f5ff;
+    text-align: center;
+}
+
+.header-text {
+    font-family: Poppins,sans-serif;
+}
+
+ .text-tourquise[_ngcontent-nxk-c11] {
+    background: linear-gradient(89.57deg,#0DC5F5 -5.62%,#B6F2FF 12.9%,#71DDF1 20.67%,#48CEFF 31.64%,#61D7F6 40.11%,#A8E9FF 52.12%,#60D2FF 59.37%,#A0E2FF 67.72%,#96E0FF 77.39%,#A4E7FF 87.84%,#5DD6F8 97.98%,#28A2D8 109.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-tourquise {
+    color: #4acfff!important;
+}
+
+.btn-whitepaper[_ngcontent-nxk-c11] {
+    background: conic-gradient(from 170.96deg at 50% 50%,#F1F6FE 0deg,#4ACFFF 74.18deg,#75DBFF 88.71deg,#FCFDFF 119.15deg,#C1EFFF 193.22deg,#DFEDFF 214.33deg,#5ED5FF 250.9deg,#FFFFFF 292.84deg,#7EDDFF 330.8deg,#F1F6FE 360deg);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-left: 10%;
+}
+
+.btn-outline-primary {
+    border: 2px solid #0DC5F5;
+}
+
+.btn {
+    line-height: 1;
+    transition: all .25s ease-in-out;
+    font-weight: 500;
+}
+
+ .right[_ngcontent-nxk-c11] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ .walletBox[_ngcontent-nxk-c11] {
+    background: #fff;
+    border-radius: 24px;
+    min-height: 460px;
+    padding: 0;
+    margin: 70px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    overflow: hidden;
+    box-shadow: 0 16px 40px #0c5d9e1a, 0 10px 32px #2722241a;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(24, 43, 72,var(--bs-bg-opacity))!important;
+}
+
+.bg-bluegrad[_ngcontent-nxk-c11] {
+    background: linear-gradient(180deg,#4ACFFF -4.32%,#042948 91.56%);
+    border-radius: 24px 24px 0 0;
+    border: 6px solid white;
+}
+
+ .time-card[_ngcontent-nxk-c11] {
+    min-width: 60px;
+    width: 20%;
+    background: rgba(255,255,255,.2);
+}
+
+.claim-title[_ngcontent-nxk-c11] {
+    max-width: 400px;
+}
+
+.swapArea[_ngcontent-nxk-c11] {
+    min-width: 388px;
+    position: relative;
+}
+
+.dashTitle[_ngcontent-nxk-c11] {
+    position: relative;
+}
+
+.dashTitle[_ngcontent-nxk-c11]:before{
+    content: "";
+    width: 25%;
+    height: 1px;
+    background: #C7CED3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.dashTitle[_ngcontent-nxk-c11]:after {
+    content: "";
+    width: 25%;
+    height: 1px;
+    background: #C7CED3;
+    position: absolute;
+    /* left: 2%; */
+    top: 50%;
+}
+
+.btn.selected[_ngcontent-nxk-c11] {
+    border: 2px solid #3980B9;
+    color: #3980b9;
+}
+
+.tab-container[_ngcontent-nxk-c11] {
+    width: 100%;
+    margin: 0;
+}
+
+.btn[_ngcontent-nxk-c11] {
+    padding: 7px;
+    height: 44px;
+    border-radius: 0.4rem;
+}
+
+.money-btn[_ngcontent-nxk-c11] {
+    width: 18%!important;
+}
+
+.btn {
+    line-height: 1;
+    transition: all .25s ease-in-out;
+    font-weight: 500;
+}
+
+.btn[_ngcontent-nxk-c11] {
+    padding: 7px;
+    height: 44px;
+    width: auto;
+    border-radius: 0.4rem;
+    border: 2px solid #F1F4F6;
+    color: #535353;
+}
+
+.swapSection[_ngcontent-nxk-c10] {
+    background: #ffffff;
+}
+
+.body-section[_ngcontent-nxk-c10] {
+    margin: 15px 0 0;
+}
+
+.amountField[_ngcontent-nxk-c10] {
+    position: relative;
+}
+
+.amountField[_ngcontent-nxk-c10] input[_ngcontent-nxk-c10] {
+    min-height: 50px;
+    padding: 8px 15px;
+    font-size: .875rem;
+    font-weight: 500;
+    background-color: #f1f4f6;
+    border: 2px solid #F1F4F6;
+    color: #727b83;
+}
+
+.amountType[_ngcontent-nxk-c10] {
+    position: absolute;
+    top: 27px;
+    right: 1rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.text-width[_ngcontent-nxk-c10] {
+    max-width: 450px;
+}
+
+.btn.btn-primary {
+    font-weight: 500;
+    border-radius: 30px;
+    background: #182B48;
+}

@@ -1,0 +1,71 @@
+.header[_ngcontent-nxk-c19] {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 25px;
+    background: rgba(76,16,54,0);
+    transition: all .3s linear;
+    z-index: 5;
+    color: #fff;
+}
+
+.header[_ngcontent-nxk-c19] .brand-logo[_ngcontent-nxk-c19] {
+    filter: drop-shadow(0px 7px 7px rgb(14,20,30));
+}
+
+.header[_ngcontent-nxk-c19] a[_ngcontent-nxk-c19] {
+    margin: 0 20px;
+    padding: 10px 0;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: .02em;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: Inder,sans-serif;
+    text-shadow: 0px 4px 4px #014C73;
+    font-weight: 500;
+}
+
+.language[_ngcontent-nxk-c19] {
+    width: 265px!important;
+    padding: 10px 15px;
+    margin: 0;
+    border-radius: 32px;
+    background: rgba(255,255,255,.15);
+    text-decoration: none;
+    letter-spacing: .02em;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.dropdown-toggle[_ngcontent-nxk-c19] {
+    width: 100%;
+}
+
+.dropdown-toggle[_ngcontent-nxk-c19]:after {
+    position: absolute;
+    right: 12px;
+}
+
+.dropdown-toggle:after {
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;
+}
+
+.dropdown-menu[_ngcontent-nxk-c19] {
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.dropdown-menu.show {
+    display: block;
+}

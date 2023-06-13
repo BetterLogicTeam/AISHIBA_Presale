@@ -1,0 +1,20 @@
+.info-text[_ngcontent-nxk-c14] {
+    font-size: 20px;
+}
+
+.blog-wrapper[_ngcontent-nxk-c14] {
+    background: transparent url("../../assets/border_how_to_buy.svg") no-repeat;
+    background-size: contain;
+    min-height: 550px;
+    max-width: 322px;
+}
+
+.blog-wrapper[_ngcontent-nxk-c14] .title[_ngcontent-nxk-c14] {
+    min-height: 60px;
+}
+
+
+.info-text {
+    font-family: Inder;
+    color: #fff;
+}

@@ -1,0 +1,92 @@
+#faq[_ngcontent-nxk-c16] {
+    margin-top: -50px;
+    padding-top: 50px;
+}
+
+ img[_ngcontent-nxk-c16] {
+    max-height: 750px;
+}
+
+.Faq_main{
+    padding-bottom: 90px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: black !important;
+    color: #4acfff;
+    border-color: transparent !important;
+}
+
+.accordion{
+    --bs-accordion-btn-focus-border-color: transparent !important; 
+    --bs-accordion-btn-focus-box-shadow: transparent !important;
+    --bs-accordion-active-color: black !important;
+    --bs-accordion-active-bg: transparent !important;
+    font-family: inder !important;
+}
+
+.accordion-button{
+    font-family: inder !important;
+    font-size: 20px !important;
+    font-weight: 500;
+    background: black !important;
+    border-bottom: none !important;
+    color: #4acfff !important;
+}
+
+.accor_heading{
+    font-family: inder !important;
+    font-size: 16px !important;
+    text-align: start;
+    font-weight: 500;
+}
+
+.accordion-item{
+    border: 1px solid #4acfff !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    background-color: black;
+    color: white !important;
+    /* border-radius: 20px !important; */
+}
+
+.accordion-button:after{
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    margin-left: auto;
+    content: "+";
+    color: #4acfff;
+    font-weight: 400;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collapsed):after{
+    content: "\d7";
+    transform: rotate(0deg);
+}
+
+.header-text.text-tourquise[_ngcontent-nxk-c16] {
+    background: linear-gradient(89.57deg,#0DC5F5 -5.62%,#B6F2FF 12.9%,#71DDF1 20.67%,#48CEFF 31.64%,#61D7F6 40.11%,#A8E9FF 52.12%,#60D2FF 59.37%,#A0E2FF 67.72%,#96E0FF 77.39%,#A4E7FF 87.84%,#5DD6F8 97.98%,#28A2D8 109.11%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@media screen and (max-width: 550px) {
+    .Faq_main{
+        padding: 0 20px 80px 20px;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 950px) {
+    .Faq_main{
+        padding: 0 90px 60px 90px;
+    }
+}

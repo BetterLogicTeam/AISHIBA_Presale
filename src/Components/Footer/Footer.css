@@ -1,0 +1,29 @@
+.footer[_ngcontent-nxk-c20] {
+    font-family: Inder;
+    padding: 50px 50px 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+}
+
+li[_ngcontent-nxk-c20] {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+a[_ngcontent-nxk-c20] {
+    text-decoration: none;
+}
+
+.color-footer[_ngcontent-nxk-c20] {
+    color: #19d4e1;
+}
+
+.address[_ngcontent-nxk-c20] {
+    max-width: 220px;
+    text-align: right;
+    margin-left: auto;
+}
