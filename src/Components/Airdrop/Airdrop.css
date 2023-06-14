@@ -26,3 +26,42 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 550px) {
+    .res_airdrop_heading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .blog-wrapper[_ngcontent-nxk-c17]{
+        max-width: 100%;
+    margin: 0 16px;
+    max-height: 50px !important;
+    border-radius: 36px;
+    border: 1px solid #4ACFFF;
+    background: transparent;
+    }
+
+     .mob-icon[_ngcontent-hqu-c17] {
+        filter: brightness(0%) !important;
+        width: 28px;
+    }
+
+    .number-div[_ngcontent-hqu-c17] {
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: -25px;
+    }
+    
+    .number-div[_ngcontent-hqu-c17] {
+        width: 48px;
+        height: 48px;
+        background: conic-gradient(from 170.96deg at 50% 50%,#F1F6FE 0deg,#4ACFFF 74.18deg,#75DBFF 88.71deg,#FCFDFF 119.15deg,#C1EFFF 193.22deg,#DFEDFF 214.33deg,#5ED5FF 250.9deg,#FFFFFF 292.84deg,#7EDDFF 330.8deg,#F1F6FE 360deg);
+        border: 2px solid #000000;
+        border-radius: 100%;
+    }
+}

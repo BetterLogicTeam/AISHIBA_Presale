@@ -1,4 +1,4 @@
-.header[_ngcontent-nxk-c19] {
+.nav_main {
     position: fixed;
     left: 0;
     top: 0;
@@ -7,14 +7,22 @@
     background: rgba(76,16,54,0);
     transition: all .3s linear;
     z-index: 5;
-    color: #fff;
+    color: #fff !important;
 }
 
-.header[_ngcontent-nxk-c19] .brand-logo[_ngcontent-nxk-c19] {
+.nav-link.active{
+    color: rgb(27,173,207) !important;
+}
+
+.nav_main.scrolled{
+    background: black !important;
+}
+
+.nav_main {
     filter: drop-shadow(0px 7px 7px rgb(14,20,30));
 }
 
-.header[_ngcontent-nxk-c19] a[_ngcontent-nxk-c19] {
+.header_ka {
     margin: 0 20px;
     padding: 10px 0;
     color: #fff;
@@ -28,16 +36,21 @@
     font-weight: 500;
 }
 
-.language[_ngcontent-nxk-c19] {
-    width: 265px!important;
+.language {
+    width: 200px !important;
+    /* height: 50px; */
     padding: 10px 15px;
     margin: 0;
     border-radius: 32px;
-    background: rgba(255,255,255,.15);
+    background: rgba(255,255,255,.15) !important;
     text-decoration: none;
     letter-spacing: .02em;
     text-transform: capitalize;
     font-weight: 500;
+}
+
+.language title{
+    color: white;
 }
 
 .dropdown-toggle[_ngcontent-nxk-c19] {
@@ -68,4 +81,66 @@
 
 .dropdown-menu.show {
     display: block;
+}
+
+.offcanvas-header{
+    background: black !important;
+}
+
+.btn-close{
+    background-image: url("../../assets/cross.svg") !important;
+    background-size: 30px;
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    .nav_main{
+        background: black;
+    }
+
+    
+
+    .navbar-brand img{
+        width: 120px;
+    }
+
+    
+
+    .brand-logo_res{
+        width: 50px !important;
+    }
+
+    
+}
+
+@media screen and (max-width: 1099px) {
+    .brand-logo_refrst{
+        display: none !important;
+    }
+
+    .offcanvas-body{
+        background: black !important;
+    }
+
+    .navbar-toggler{
+        background: white !important;
+    }
+
+    .header_ka{
+        border-bottom: 1px solid #F1F4F6;
+        margin-bottom: 10px;
+    }
+
+    .language{
+        color: white;
+        width: 100% !important;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width:1100px) and (max-width: 10000px) {
+    .brand-logo_res{
+        display: none !important;
+    }
 }

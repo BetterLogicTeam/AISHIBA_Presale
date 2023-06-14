@@ -9,53 +9,19 @@ import "./Platform.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import React, { useEffect } from "react";
 import $ from "jquery";
-import "slick-slider";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
+import Slider_main from "./Slider_main"
 
 function Platform() {
 
-  useEffect(() => {
-    $(document).ready(function () {
-      $(".slider").slick({
-        centerMode: true,
-        centerPadding: "5px",
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        // dots: true,
-        focusOnSelect: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 3,
-            },
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: "40px",
-              slidesToShow: 1,
-            },
-          },
-        ],
-      });
-    });
-  }, [$]);
+ 
   return (
-    <div>
+    <div id="Platform">
       <div _ngcontent-nxk-c11="" className="container py-4 bg-mobile">
         <div
           _ngcontent-nxk-c11=""
@@ -168,39 +134,9 @@ function Platform() {
         </div>
         
       </div>
-      <div className="container">
-      <div className="explore-area bg-color-cu section-padding-100-50">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h6 className="heading-sub">New Explore</h6>
-              <h2 className="heading-title">Explore All</h2>
-            </div>
-
-            <div className="slickSliderContainer">
-              <div className="slider">
-                <div>
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" className="sliderimgall" />
-                </div>
-                <div>
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" className="sliderimgall" />
-                </div>
-                <div>
-                  <img className="sliderimgall" src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div>
-                  <img className="sliderimgall" src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div>
-                  <img className="sliderimgall" src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
+      
+      {/* <Slider_main/> */}
+     
       <div
         _ngcontent-nxk-c13=""
         className="col-md-6 d-flex justify-content-center mx-auto mt-4"

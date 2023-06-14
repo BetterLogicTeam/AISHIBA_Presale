@@ -20,7 +20,7 @@ function Hero() {
         >
           <h1
             _ngcontent-nxk-c11=""
-            className="title-txt fs-4 text-uppercase mt-3 header-text"
+            className="title-txt fs-4 hero_ke_hdng text-uppercase mt-3 header-text"
           >
             <span _ngcontent-nxk-c11="" translate="" className="text-tourquise">
               AIDOGE
@@ -126,7 +126,7 @@ function Hero() {
                   >
                     <button
                       _ngcontent-nxk-c11=""
-                      className="btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                      className="btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
                     >
                       <img
                         _ngcontent-nxk-c11=""

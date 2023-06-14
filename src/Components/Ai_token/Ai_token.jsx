@@ -4,17 +4,17 @@ import "./Ai_token.css";
 
 function Ai_token() {
   return (
-    <div>
+    <div id='ai-Token'>
         <ico-future-doge _ngcontent-nxk-c18="" _nghost-nxk-c12="">
   <div _ngcontent-nxk-c12="" id="ai-token" />
-  <div _ngcontent-nxk-c12="" className="container py-5">
+  <div _ngcontent-nxk-c12="" className="container ai_token_main py-5">
     <div
       _ngcontent-nxk-c12=""
       className="d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-around row"
     >
       <div
         _ngcontent-nxk-c12=""
-        className="col-md-6 d-flex align-items-center justify-content-center order-2 order-sm-1"
+        className="col-lg-6 d-flex align-items-center justify-content-center order-2 order-lg-1"
       >
         <img
           _ngcontent-nxk-c12=""
@@ -24,7 +24,7 @@ function Ai_token() {
       </div>
       <div
         _ngcontent-nxk-c12=""
-        className="order-1 order-sm-2 d-flex flex-column title-txt justify-content-start col-md-6 pe-md-5 px-2 font-inder right-section fs-4 mx-2 mx-md-0"
+        className="order-1 order-lg-2 d-flex flex-column srrrkjsd title-txt justify-content-start col-lg-6 pe-md-5 px-2 font-inder right-section fs-4 mx-2 mx-md-0"
       >
         <h2
           _ngcontent-nxk-c12=""

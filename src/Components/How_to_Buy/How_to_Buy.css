@@ -18,3 +18,9 @@
     font-family: Inder;
     color: #fff;
 }
+
+@media screen and (max-width: 550px) {
+    .blog-wrapper[_ngcontent-nxk-c14]{
+        min-height: 450px;
+    }
+}

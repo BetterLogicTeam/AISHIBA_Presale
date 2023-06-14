@@ -6,7 +6,7 @@ import card_how from "../../assets/card_how.svg";
 
 function How_to_Buy() {
   return (
-    <div>
+    <div id='how-to-buy'>
         <ico-how-to-buy _ngcontent-nxk-c18="" _nghost-nxk-c14="">
   <div _ngcontent-nxk-c14="" id="how-to-buy" />
   <section _ngcontent-nxk-c14="" className="mx-2 mx-md-0">
@@ -15,7 +15,7 @@ function How_to_Buy() {
         <div _ngcontent-nxk-c14="">
           <h2
             _ngcontent-nxk-c14=""
-            className="header-text text-start text-md-center fw-bold mb-4"
+            className="header-text pt-5 text-start text-md-center fw-bold mb-4"
           >
             How To Buy{" "}
             <span _ngcontent-nxk-c14="" translate="" className="text-tourquise">

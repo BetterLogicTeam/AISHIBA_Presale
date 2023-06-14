@@ -6,13 +6,13 @@ import airdrop from "../../assets/airdrop.svg"
 
 function Airdrop() {
   return (
-    <div>
+    <div id="airdrop">
       <ico-airdrop _ngcontent-nxk-c18="" _nghost-nxk-c17="">
         <div _ngcontent-nxk-c17="" id="airdrop" />
         <section _ngcontent-nxk-c17="" className="mx-2 mx-md-0">
-          <div _ngcontent-nxk-c17="" className="container max-container">
+          <div _ngcontent-nxk-c17="" className="pt-5 container max-container">
             <div _ngcontent-nxk-c17="" className="row justify-content-center">
-              <div _ngcontent-nxk-c17="">
+              <div _ngcontent-nxk-c17="" className="res_airdrop_heading">
                 <h2
                   _ngcontent-nxk-c17=""
                   className="header-text text-start text-md-center fw-bold mb-4"
@@ -59,7 +59,7 @@ function Airdrop() {
                   <img
                     _ngcontent-nxk-c17=""
                     alt=""
-                    className="my-5 d-none d-sm-block"
+                    className="my-5 d-sm-block"
                     src={cart}
                   />
                   <h3
@@ -81,7 +81,7 @@ function Airdrop() {
                     _ngcontent-nxk-c17=""
                     className="position-absolute number-div d-flex align-items-center justify-content-center font-24 fw-semibold"
                   >
-                    <span _ngcontent-nxk-c17="" className="d-none d-sm-block">
+                    <span _ngcontent-nxk-c17="" className=" d-sm-block">
                       1
                     </span>
                     <img
@@ -104,7 +104,7 @@ function Airdrop() {
                   <img
                     _ngcontent-nxk-c17=""
                     alt=""
-                    className="my-5 d-none d-sm-block"
+                    className="my-5 d-sm-block"
                     src={refer_airdrop}
                   />
                   <h3
@@ -126,7 +126,7 @@ function Airdrop() {
                     _ngcontent-nxk-c17=""
                     className="position-absolute number-div d-flex align-items-center justify-content-center font-24 fw-semibold"
                   >
-                    <span _ngcontent-nxk-c17="" className="d-none d-sm-block">
+                    <span _ngcontent-nxk-c17="" className=" d-sm-block">
                       2
                     </span>
                     <img
@@ -149,7 +149,7 @@ function Airdrop() {
                   <img
                     _ngcontent-nxk-c17=""
                     alt=""
-                    className="my-5 d-none d-sm-block"
+                    className="my-5 d-sm-block"
                     src={airdrop}
                   />
                   <h3
@@ -171,7 +171,7 @@ function Airdrop() {
                     _ngcontent-nxk-c17=""
                     className="position-absolute number-div d-flex align-items-center justify-content-center font-24 fw-semibold"
                   >
-                    <span _ngcontent-nxk-c17="" className="d-none d-sm-block">
+                    <span _ngcontent-nxk-c17="" className=" d-sm-block">
                       3
                     </span>
                     <img

@@ -6,14 +6,14 @@ import { Accordion } from "react-bootstrap";
 
 function Faq() {
   return (
-    <div>
+    <div id="faq">
       <ico-faq _ngcontent-nxk-c18="" _nghost-nxk-c16="">
         <section _ngcontent-nxk-c16="" id="faq" className="faq">
           <div _ngcontent-nxk-c16="" className="container py-5 mt-4 mb-3">
-            <div _ngcontent-nxk-c16="" className="row">
+            <div _ngcontent-nxk-c16="" className="row py-5">
               <div
                 _ngcontent-nxk-c16=""
-                className="col-md-6 order-1 order-lg-1"
+                className="col-lg-6 order-1 order-lg-1"
               >
                 <img
                   _ngcontent-nxk-c16=""
@@ -28,7 +28,7 @@ function Faq() {
               </div>
               <div
                 _ngcontent-nxk-c16=""
-                className="col-md-6 order-1 order-lg-1"
+                className="col-lg-6 order-1 order-lg-1"
               >
                 <h2
                   _ngcontent-nxk-c16=""
@@ -38,7 +38,7 @@ function Faq() {
                 </h2>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header> What is AiDoge? </Accordion.Header>
+                    <Accordion.Header> What is AiDoge ? </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       AiDoge is a next-level, AI-powered meme generation
                       platform designed to revolutionise the way crypto memes
@@ -46,7 +46,7 @@ function Faq() {
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item className="mt-3" eventKey="1">
-                    <Accordion.Header> Why AiDoge? </Accordion.Header>
+                    <Accordion.Header> Why AiDoge ? </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       {" "}
                       AiDoge is addressing a growing problem on Crypto Twitter
@@ -59,7 +59,7 @@ function Faq() {
                   <Accordion.Item className="mt-3" eventKey="2">
                     <Accordion.Header>
                       {" "}
-                      What is the $AI token utility?{" "}
+                      What is the $AI token utility ?{" "}
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       The $AI token is the key to accessing our bespoke AI
@@ -72,7 +72,7 @@ function Faq() {
                   <Accordion.Item className="mt-3" eventKey="3">
                     <Accordion.Header>
                       {" "}
-                      When will I get my $AI tokens?{" "}
+                      When will I get my $AI tokens ?{" "}
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       If you’ve purchased $AI tokens in presale, you’ll be able
@@ -82,7 +82,7 @@ function Faq() {
 
                   <Accordion.Item className="mt-3" eventKey="4">
                     <Accordion.Header>
-                      When can I start trading $AI?
+                      When can I start trading $AI ?
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       We’ll list the $AI token on a top DEX as soon as possible
@@ -93,7 +93,7 @@ function Faq() {
 
                   <Accordion.Item className="mt-3" eventKey="5">
                     <Accordion.Header>
-                      When will I be able to generate AI memes?
+                      When will I be able to generate AI memes ?
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       The AiDoge meme generation platform is earmarked to go
@@ -104,7 +104,7 @@ function Faq() {
 
                   <Accordion.Item className="mt-3" eventKey="5">
                     <Accordion.Header>
-                      What are the benefits of staking $AI?
+                      What are the benefits of staking $AI ?
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       Staking $AI tokens builds up credits for users. Credits
