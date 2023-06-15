@@ -16,6 +16,7 @@
 
 .nav_main.scrolled{
     background: black !important;
+    background-color: black !important;
 }
 
 .nav_main {
@@ -23,7 +24,7 @@
 }
 
 .header_ka {
-    margin: 0 20px;
+    margin: 0 8px;
     padding: 10px 0;
     color: #fff;
     cursor: pointer;
@@ -39,7 +40,7 @@
 .language {
     width: 200px !important;
     /* height: 50px; */
-    padding: 10px 15px;
+    padding: 6px 15px;
     margin: 0;
     border-radius: 32px;
     background: rgba(255,255,255,.15) !important;
@@ -47,10 +48,32 @@
     letter-spacing: .02em;
     text-transform: capitalize;
     font-weight: 500;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+option{
+    color: black !important;
+    font-size: 16px;
+    padding: 150px 0 !important;
+    overflow-y: scroll;
 }
 
 .language title{
     color: white;
+}
+
+.navbar-transparent {
+    background-color: transparent;
+  }
+  
+  .navbar-bg {
+    background-color: black;
+  }
+
+  .nav_main {
+    filter: none !important;
 }
 
 .dropdown-toggle[_ngcontent-nxk-c19] {
@@ -79,6 +102,10 @@
     overflow-y: auto;
 }
 
+.nav-link{
+    color: white !important;
+}
+
 .dropdown-menu.show {
     display: block;
 }
@@ -90,6 +117,10 @@
 .btn-close{
     background-image: url("../../assets/cross.svg") !important;
     background-size: 30px;
+}
+
+.dropdown-toggle:after{
+    margin-left: 4rem;
 }
 
 
@@ -111,6 +142,17 @@
         width: 50px !important;
     }
 
+    .header_ka{
+        border-bottom: 1px solid #F1F4F6;
+        margin-bottom: 10px;
+    }
+
+    .language{
+        margin-top: 10px;
+    }
+
+    
+
     
 }
 
@@ -126,21 +168,67 @@
     .navbar-toggler{
         background: white !important;
     }
-
-    .header_ka{
-        border-bottom: 1px solid #F1F4F6;
-        margin-bottom: 10px;
-    }
-
-    .language{
-        color: white;
-        width: 100% !important;
-        margin-top: 10px;
-    }
 }
 
 @media (min-width:1100px) and (max-width: 10000px) {
     .brand-logo_res{
         display: none !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* .dropdown-toggle:after{
+        margin-left: 3rem;
+    } */
+
+    .language{
+        width: 40%;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 399px) {
+    .dropdown-toggle:after{
+        margin-left: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .language{
+        width: 100% !important;
+        margin-top: 10px;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 499px) {
+    .dropdown-toggle:after{
+        margin-left: 8.5rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    .dropdown-toggle:after{
+        /* margin-left: 19.9rem; */
+    }
+
+    .language{
+        width: 30% !important;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1100px) {
+    .header_ka{
+        font-size: 13px;
+    }
+
+    .language{
+        padding: 2px 15px;
     }
 }

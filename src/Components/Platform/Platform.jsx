@@ -135,7 +135,7 @@ function Platform() {
         
       </div>
       
-      {/* <Slider_main/> */}
+      <Slider_main/>
      
       <div
         _ngcontent-nxk-c13=""

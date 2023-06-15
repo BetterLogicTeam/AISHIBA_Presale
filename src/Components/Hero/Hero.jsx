@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Hero.css";
 import eth from "../../assets/eth.svg";
 import usdt from "../../assets/usdt.svg";
@@ -9,8 +9,13 @@ import discord from "../../assets/social-discord.svg";
 import telegram from "../../assets/social-telegram.svg";
 import tiktok from "../../assets/social-tiktok.svg";
 
-
 function Hero() {
+  const [collection, setcollection] = useState(0);
+
+  const handleButtonClick = (newData) => {
+    setcollection(newData);
+  };
+
   return (
     <div>
       <div _ngcontent-nxk-c11="" className="background">
@@ -126,14 +131,14 @@ function Hero() {
                   >
                     <button
                       _ngcontent-nxk-c11=""
-                      className="btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                      className={
+                        collection == 0
+                          ? "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
+                      }
+                      onClick={() => handleButtonClick(0)}
                     >
-                      <img
-                        _ngcontent-nxk-c11=""
-                        src={eth}
-                        height={25}
-                        alt=""
-                      />
+                      <img _ngcontent-nxk-c11="" src={eth} height={25} alt="" />
                       <span
                         _ngcontent-nxk-c11=""
                         className="text-center flex-grow-1 px-2 fw-semibold"
@@ -143,7 +148,12 @@ function Hero() {
                     </button>
                     <button
                       _ngcontent-nxk-c11=""
-                      className="btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                      className={
+                        collection == 1
+                          ? "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
+                      }
+                      onClick={() => handleButtonClick(1)}
                     >
                       <img
                         _ngcontent-nxk-c11=""
@@ -163,14 +173,14 @@ function Hero() {
                     </button>
                     <button
                       _ngcontent-nxk-c11=""
-                      className="btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                      className={
+                        collection == 2
+                          ? "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                      }
+                      onClick={() => handleButtonClick(2)}
                     >
-                      <img
-                        _ngcontent-nxk-c11=""
-                        src={bnb}
-                        height={25}
-                        alt=""
-                      />
+                      <img _ngcontent-nxk-c11="" src={bnb} height={25} alt="" />
                       <span
                         _ngcontent-nxk-c11=""
                         className="text-center flex-grow-1 px-2 fw-semibold"
@@ -180,7 +190,12 @@ function Hero() {
                     </button>
                     <button
                       _ngcontent-nxk-c11=""
-                      className="btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                      className={
+                        collection == 3
+                          ? "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                      }
+                      onClick={() => handleButtonClick(3)}
                     >
                       <img
                         _ngcontent-nxk-c11=""
@@ -250,7 +265,15 @@ function Hero() {
                                 {" "}
                                 Amount in{" "}
                                 <span _ngcontent-nxk-c10="" className="fw-bold">
-                                  ETH
+                                  {collection == 0
+                                    ? "ETH"
+                                    : collection == 1
+                                    ? "USDT"
+                                    : collection == 2
+                                    ? "BNB"
+                                    : collection == 3
+                                    ? "USDT"
+                                    : null}
                                 </span>{" "}
                                 you pay{" "}
                               </label>
@@ -281,54 +304,15 @@ function Hero() {
                                   _ngcontent-nxk-c10=""
                                   className="amountType"
                                 >
-                                  <svg-icon _ngcontent-nxk-c10="">
-                                    <svg
-                                      width={50}
-                                      height={50}
-                                      viewBox="0 0 50 50"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      _ngcontent-nxk-c10=""
-                                      aria-hidden="true"
-                                      style={{ width: 28, height: 28 }}
-                                    >
-                                      <path
-                                        d="M25.1435 49.5432C38.7831 49.5432 49.8401 38.4529 49.8401 24.7716C49.8401 11.0902 38.7831 0 25.1435 0C11.5039 0 0.446777 11.0902 0.446777 24.7716C0.446777 38.4529 11.5039 49.5432 25.1435 49.5432Z"
-                                        fill="#4793FF"
-                                        _ngcontent-nxk-c10=""
-                                      />
-                                      <path
-                                        d="M25.1436 0C38.7613 0 49.8402 11.1125 49.8402 24.7716C49.8402 38.4306 38.7613 49.5432 25.1436 49.5432V0Z"
-                                        fill="#5E69E2"
-                                        _ngcontent-nxk-c10=""
-                                      />
-                                      <path
-                                        d="M25.1432 43.3244C35.3586 43.3244 43.6399 35.0184 43.6399 24.7717C43.6399 14.5249 35.3586 6.21899 25.1432 6.21899C14.9277 6.21899 6.64648 14.5249 6.64648 24.7717C6.64648 35.0184 14.9277 43.3244 25.1432 43.3244Z"
-                                        fill="#2EBEEF"
-                                        _ngcontent-nxk-c10=""
-                                      />
-                                      <path
-                                        d="M25.1436 6.21899C35.3427 6.21899 43.6403 14.541 43.6403 24.7717C43.6403 35.0023 35.3427 43.3244 25.1436 43.3244V6.21899Z"
-                                        fill="#4793FF"
-                                        _ngcontent-nxk-c10=""
-                                      />
-                                      <path
-                                        d="M23.9395 12.3066L16.1896 23.9666C15.8655 24.4533 15.8655 25.0887 16.1896 25.5767L23.9395 37.2367C24.5122 38.0987 25.7747 38.0987 26.3475 37.2367L34.0973 25.5767C34.4215 25.0887 34.4215 24.4533 34.0973 23.9666L26.3475 12.3066C25.7747 11.4445 24.5123 11.4445 23.9395 12.3066Z"
-                                        fill="#76E5F6"
-                                        _ngcontent-nxk-c10=""
-                                      />
-                                      <path
-                                        d="M25.1436 26.6468V37.8832C25.6024 37.8832 26.0612 37.6677 26.3476 37.2367L34.0975 25.5767C34.2481 25.35 34.3279 25.0912 34.3384 24.8311L25.4273 26.6183C25.3337 26.6369 25.2386 26.6468 25.1436 26.6468Z"
-                                        fill="#2EBEEF"
-                                        _ngcontent-nxk-c10=""
-                                      />
-                                      <path
-                                        d="M25.143 11.66C24.6842 11.66 24.2254 11.8756 23.939 12.3066L16.1891 23.9666C16.0158 24.2279 15.9361 24.5301 15.9482 24.8311L24.8592 26.6183C24.9529 26.6369 25.048 26.6468 25.143 26.6468V11.66Z"
-                                        fill="#C2F4FB"
-                                        _ngcontent-nxk-c10=""
-                                      />
-                                    </svg>
-                                  </svg-icon>
+                                  {collection == 0 ? (
+                                    <img src={eth} alt="" height={25} />
+                                  ) : collection == 1 ? (
+                                    <img src={usdt} alt="" height={25} />
+                                  ) : collection == 2 ? (
+                                    <img src={bnb} alt="" height={25} />
+                                  ) : collection == 3 ? (
+                                    <img src={usdt} alt="" height={25} />
+                                  ) : null}
                                 </div>
                               </div>
                             </div>
@@ -404,8 +388,18 @@ function Hero() {
                             _ngcontent-nxk-c10=""
                             className="lowBalance fs-7 text-width m-1 ng-star-inserted"
                           >
-                            0.015 ETH is reserved for gas. The actual amount
-                            used will depend on the network.
+                            0.015{" "}
+                            {collection == 0
+                              ? "ETH"
+                              : collection == 1
+                              ? "USDT"
+                              : collection == 2
+                              ? "BNB"
+                              : collection == 3
+                              ? "USDT"
+                              : null}{" "}
+                            is reserved for gas. The actual amount used will
+                            depend on the network.
                           </div>
                           {/**/}
                           {/**/}
@@ -505,18 +499,12 @@ function Hero() {
                 target="_blank"
                 className="social mx-3 pt-1"
               >
-                <img
-                  _ngcontent-nxk-c11=""
-                  height={30}
-                  src={tiktok}
-                  alt="yt"
-                />
+                <img _ngcontent-nxk-c11="" height={30} src={tiktok} alt="yt" />
               </a>
             </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 }
