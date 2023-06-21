@@ -90,3 +90,13 @@
         padding: 0 90px 60px 90px;
     }
 }
+
+.accordion-button{
+    background: linear-gradient(to right, #00ff7d, #f8ff00)!important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+}
+
+.accordion-item{
+    border-top: 1px solid #00ff7d !important  ;
+}

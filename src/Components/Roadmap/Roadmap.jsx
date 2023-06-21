@@ -4,7 +4,7 @@ import arrow_left from "../../assets/icon-arrow-left.svg"
 import arrow_right from "../../assets/icon-arrow-right.svg"
 
 function Roadmap({ milestones }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(2);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -30,7 +30,7 @@ function Roadmap({ milestones }) {
           _ngcontent-nxk-c15=""
           className="mb-md-4 mb-0 pb-3 pb-md-5 mt-4 mt-md-1 fw-bold header-text text-center text-uppercase"
         >
-          <span _ngcontent-nxk-c15="" translate="" className="text-tourquise">
+          <span _ngcontent-nxk-c15="" translate="" className="  new_text_here">
             Roadmap
           </span>
         </h2>

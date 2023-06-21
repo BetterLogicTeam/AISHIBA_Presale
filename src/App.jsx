@@ -11,27 +11,29 @@ import Roadmap from './Components/Roadmap/Roadmap'
 import Airdrop from './Components/Airdrop/Airdrop'
 import Faq from './Components/Faq/Faq'
 import Footer from './Components/Footer/Footer'
+import About_us from './Components/About_us/About_us'
+import Tokenomics from './Components/Tokenomics/Tokenomics'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(2)
 
   const milestones = [
     {
-      title: 'Q1 2023',
+      title: 'Q3 2023',
       description: 'Presale & Token Development',
       description2: 'SolidProof Contract Audit',
       description3: 'Presale ICO Launch',
       description4: 'Platform Development Begins',
     },
     {
-      title: 'Q2 2023',
+      title: 'Q4 2023',
       description: 'Staking Platform To Allow Users',
       description2: 'Platform Signup Launches',
       description3: 'Platform Development',
       description4: 'New CEX & DEX Listings',
     },
     {
-      title: 'Q3 2023',
+      title: 'Q1 2024',
       description: 'AI Meme Generation Platform',
       description2: 'User Credits Based ',
       description3: 'Public Wall For Memes',
@@ -57,11 +59,13 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Platform />
-      <Ai_token />
-      <How_to_Buy />
+      <About_us/>
+      <Tokenomics/>
+      {/* <Platform /> */}
+      {/* <Ai_token /> */}
+      {/* <How_to_Buy /> */}
       <Roadmap milestones={milestones}/>
-      <Airdrop />
+        {/* <Airdrop /> */}
       <Faq />
       <Footer />
     </>

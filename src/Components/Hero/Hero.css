@@ -1,7 +1,7 @@
 .background[_ngcontent-nxk-c11] {
     padding-top: 40px;
-    background-size: contain !important;
-    background: transparent url(/src/assets/banner.png) no-repeat;
+    background-size: cover !important;
+    background: transparent url(/src/assets/yello.jpg) no-repeat;
 }
 
 .header-logo[_ngcontent-nxk-c11] {
@@ -20,7 +20,7 @@
 }
 
  .text-tourquise[_ngcontent-nxk-c11] {
-    background: linear-gradient(89.57deg,#0DC5F5 -5.62%,#B6F2FF 12.9%,#71DDF1 20.67%,#48CEFF 31.64%,#61D7F6 40.11%,#A8E9FF 52.12%,#60D2FF 59.37%,#A0E2FF 67.72%,#96E0FF 77.39%,#A4E7FF 87.84%,#5DD6F8 97.98%,#28A2D8 109.11%);
+    /* background: linear-gradient(89.57deg,#0DC5F5 -5.62%,#B6F2FF 12.9%,#71DDF1 20.67%,#48CEFF 31.64%,#61D7F6 40.11%,#A8E9FF 52.12%,#60D2FF 59.37%,#A0E2FF 67.72%,#96E0FF 77.39%,#A4E7FF 87.84%,#5DD6F8 97.98%,#28A2D8 109.11%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -35,6 +35,42 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-left: 10%;
+}
+
+
+.new_b_c h1 {
+    color: white !important;
+    font-weight: 700 !important;
+    text-transform: capitalize ;
+}
+
+.haeding_para{
+    color: #fff;
+
+}
+
+
+.white_paper_btn{
+    /* background-color: #A04506 !important; */
+    background-color: #ef5734;
+background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
+    padding: 13px 20px ;
+    width: 200px ;
+    font-size: 18px ;
+    font-weight: 600 !important;
+    border-radius: 15px !important;
+    color: white !important;
+    text-align: center;
+    text-transform: capitalize !important;
+    outline: none !important;
+    border: none;
+
+}
+
+
+.new_b_c{
+    margin-top: 12rem  !important;
+    text-align: left !important ;
 }
 
 .btn-outline-primary {
@@ -56,7 +92,9 @@
 }
 
  .walletBox[_ngcontent-nxk-c11] {
-    background: #fff;
+    /* background: #fff; */
+    background: linear-gradient(315deg, #A04506 0%, #A04506 74%) !important;
+
     border-radius: 24px;
     min-height: 460px;
     padding: 0;
@@ -76,9 +114,10 @@
 }
 
 .bg-bluegrad[_ngcontent-nxk-c11] {
-    background: linear-gradient(180deg,#4ACFFF -4.32%,#042948 91.56%);
+    background-image: linear-gradient(315deg, #A04506 0%, #A04506 74%) !important;
+    /* background: linear-gradient(180deg,#4ACFFF -4.32%,#042948 91.56%); */
     border-radius: 24px 24px 0 0;
-    border: 6px solid white;
+    /* border: 6px solid #A04506; */
 }
 
  .time-card[_ngcontent-nxk-c11] {
@@ -260,3 +299,196 @@
     background-size: 100%!important;
     padding-top: 120px;
 }}
+
+
+
+.bg_new_here{
+    background-image: linear-gradient(315deg, #A04506 0%, #A04506 74%) !important;
+}
+
+
+.new_swap_son{
+    background-image: linear-gradient(315deg, #A04506 0%, #A04506 74%) !important;
+
+}
+
+
+.new_yello_btn{
+    background-color:#A04506 !important;
+    border: 2px solid white !important;
+    color: white !important;
+}
+
+
+.new_buy_now_btn{
+    background: linear-gradient(50deg, #A04506 0%, #A04506 74%) !important; 
+}
+
+
+
+
+
+/* buton */
+.heading_btn {
+    position: relative;
+    font-family: inherit;
+    text-transform: capitalize !important;
+    font-size: 18px;
+    border-radius: 40em;
+    width: 8em;
+    height: 3em;
+    z-index: 1;
+    color: white;
+    overflow: hidden;
+    border: none;
+  }
+  
+  .heading_btn .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 3em;
+    border-radius: 40em;
+    border: none;
+    background: linear-gradient(rgba(255, 255, 255, 0.473), rgba(150, 150, 150, 0.25));
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  .heading_btn .blob {
+    position: absolute;
+    z-index: -1;
+    border-radius: 5em;
+    width: 5em;
+    height: 3em;
+    transition: transform .3s ease-in-out, background .3s ease-in-out;
+  }
+  
+  .heading_btn .blob:nth-child(2) {
+    left: 0em;
+    top: 0;
+    background: #ff930f;
+  }
+  
+  .heading_btn .blob:nth-child(3) {
+    left: 1.8em;
+    top: 0;
+    z-index: -1;
+    background: #bf0fff;
+  }
+  
+  .heading_btn .blob:nth-child(4) {
+    left: 4em;
+    top: -1em;
+    background: #ff1b6b;
+  }
+  
+  .heading_btn .blob:nth-child(5) {
+    left: 4.3em;
+    top: 1.6em;
+    background: #0061ff;
+  }
+  
+  .heading_btn:hover .blob:nth-child(2) {
+    background: #0061ff;
+  }
+  
+  .heading_btn:hover .blob:nth-child(3) {
+    background: #ff1b6b;
+  }
+  
+  .heading_btn:hover .blob:nth-child(4) {
+    background: #bf0fff;
+  }
+  
+  .heading_btn:hover .blob:nth-child(5) {
+    background: #ff930f;
+  }
+  
+  .heading_btn:hover .blob {
+    transform: scale(1.3);
+  }
+  
+  .heading_btn:active {
+    border: 2px solid white;
+  }
+
+
+  .main_pooo{
+    background-color: transparent !important;
+    background: none !important;
+   padding: 1rem 3rem !important;
+   /* z-index: 1; */
+   
+
+}
+
+
+  .progress_bar{
+    background-color: white !important;
+    position: relative;
+    height: 26px !important;
+    display: flex;
+    /* align-items: center !important; */
+    border-radius: 20px !important;
+  }
+
+
+  .clor{
+    background-color:  rgb(88, 88, 26);
+    position: absolute;
+    border-radius: 20px !important;
+    height: 100%  !important;
+    width: 30% !important;    background: linear-gradient(to right, #00ff7d, #f8ff00);
+
+  }
+  
+  
+  .stage_text{
+    color: black !important;
+    margin-left: 10rem !important;
+    margin-top: 5px !important;
+    text-transform: capitalize !important;
+
+  }
+  
+
+  .borrrr_shs{
+    /* border: 5px solid  red !important; */
+    border-width: 5px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom   , 
+        #00ff7d, 
+       #f8ff00
+      ) 1 100%;
+}
+    /* border:3px  linear-gradient(rgba(255, 255, 255, 0.473), rgba(150, 150, 150, 0.25)); */
+  
+
+
+
+    @media only screen and (max-width:700px){
+        .new_b_c{
+            margin-top: 5rem !important;
+        }
+    }
+
+
+
+
+    @media only screen and (max-width:600px){
+        .walletBox[_ngcontent-nxk-c11]{
+margin-top: 2rem !important;
+        }
+    }
+
+
+    
+
+
+ 

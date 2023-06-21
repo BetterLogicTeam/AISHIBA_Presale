@@ -1,0 +1,48 @@
+.tken_main_bg{
+    background: black ;
+    padding: 30px 20px !important;
+}
+
+
+.tkon_main_heainf{
+    font-weight: 700;
+    font-size: 36px;
+    background: linear-gradient(to right, #00ff7d, #f8ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center !important;
+    text-transform: capitalize !important;
+}
+
+
+.tok_pr{
+    position: relative;
+    background: #424242;
+    height: 20px !important;
+    border-radius: 25px !important;
+}
+
+.inner_tkn{
+    border-radius: 25px;
+    position:absolute !important;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #2735FD, #50D1F8 15%, #C29632 40%, #2DB600 55%,#FD813D 75%, #FB3B78 85%,#2A7E90) !important;
+}
+
+
+.ten{
+    width: 10% !important;
+}
+
+
+.five{
+    width: 5% !important;
+}
+
+.progress_head{
+    font-size: 14px ;
+    font-weight: 400px ;
+    line-height: 1.5;
+    text-transform: capitalize !important;
+}

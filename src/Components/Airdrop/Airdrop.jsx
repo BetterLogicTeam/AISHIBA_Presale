@@ -20,7 +20,7 @@ function Airdrop() {
                   <span
                     _ngcontent-nxk-c17=""
                     translate=""
-                    className="text-tourquise"
+                    className="new_text_here"
                   >
                     $AI
                   </span>{" "}
@@ -28,7 +28,7 @@ function Airdrop() {
                   <span
                     _ngcontent-nxk-c17=""
                     translate=""
-                    className="text-tourquise"
+                    className="new_text_here"
                   >
                     Airdrop
                   </span>
@@ -64,7 +64,7 @@ function Airdrop() {
                   />
                   <h3
                     _ngcontent-nxk-c17=""
-                    className="font-20 text-center text-tourquise blog-title"
+                    className="font-20 text-center new_text_here blog-title"
                   >
                     {" "}
                     Purchase $AI In Presale{" "}
@@ -109,7 +109,7 @@ function Airdrop() {
                   />
                   <h3
                     _ngcontent-nxk-c17=""
-                    className="font-20 text-center text-tourquise blog-title"
+                    className="font-20 text-center new_text_here blog-title"
                   >
                     {" "}
                     Share Your Referral Code{" "}
@@ -154,7 +154,7 @@ function Airdrop() {
                   />
                   <h3
                     _ngcontent-nxk-c17=""
-                    className="font-20 text-center text-tourquise blog-title"
+                    className="font-20 text-center new_text_here blog-title"
                   >
                     {" "}
                     Earn $AI Airdrop{" "}

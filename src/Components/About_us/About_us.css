@@ -1,0 +1,65 @@
+.main_about_us{
+    padding: 30px 20px !important;
+    background-color:#000 !important ;
+}
+
+
+.main_about_al{
+    color: white !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+    font-weight: 700 !important;
+    font-size: 36px !important;
+    line-height: 1.5px !important;
+    margin-bottom: 2rem !important;
+}
+
+
+.about_us_contetn{
+    text-align: left;
+}
+
+.about_us_contetn p {
+    color: white !important;
+}
+
+
+.lower_cotetn{
+    text-align: left !important;
+    color: white !important;
+    margin-top: 15px !important;
+}
+
+
+.lower_cotetn h5{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+
+.img_icon{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+
+.dss{
+    /* width: 100px ;
+    height: 60px; */
+    padding:15px !important;
+    margin-right: 15px !important;
+    background-color: rgb(216, 216, 11);
+    border-radius:50% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:600px) {
+
+    .imgssrfwf{
+        width: 75% !important;
+        margin-bottom: 2rem !important;
+    }
+}

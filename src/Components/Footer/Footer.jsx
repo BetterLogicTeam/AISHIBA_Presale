@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.css";
-import logo_web from "../../assets/logo_web.png";
+import logo_web from "../../assets/logo.png";
 import ai_footer from "../../assets/ai_footer.svg";
-import instagram from "../../assets/social-instagram.svg";
-import twitter from "../../assets/social-twitter.svg";
+// import instagram from "../../assets/social-instagram.svg";
+// import twitter from "../../assets/social-twitter.svg";
 import discord from "../../assets/social-discord.svg";
 import telegram from "../../assets/social-telegram.svg";
 import tiktok from "../../assets/social-tiktok.svg";
@@ -21,93 +21,68 @@ function Footer() {
               _ngcontent-nxk-c20=""
               className="d-flex flex-column flex-lg-row align-items-center justify-content-between"
             >
-              <div
+              {/* <div
                 _ngcontent-nxk-c20=""
                 className="divider d-block d-lg-none"
-              />
-              <div
-                _ngcontent-nxk-c20=""
-                className="invisible d-flex justify-content-center"
-              >
-                <a
+              /> */}
+                {/* <div
                   _ngcontent-nxk-c20=""
-                  href="https://www.instagram.com/aidogecrypto/"
-                  target="_blank"
+                  className="invisible d-flex justify-content-center"
                 >
-                  <img
+              
+                  <a
                     _ngcontent-nxk-c20=""
-                    height={32}
-                    src={instagram}
-                    alt="insta"
-                    className="me-3"
-                  />
-                </a>
-                <a
-                  _ngcontent-nxk-c20=""
-                  href="https://twitter.com/aidogecrypto"
-                  target="_blank"
-                >
-                  <img
+                    href="https://discord.gg/SVPp65yR3M"
+                    target="_blank"
+                  >
+                    <img
+                      _ngcontent-nxk-c20=""
+                      height={32}
+                      src={discord}
+                      alt="discord"
+                      className="me-3"
+                    />
+                  </a>
+                  <a
                     _ngcontent-nxk-c20=""
-                    height={32}
-                    src={twitter}
-                    alt="twitter"
-                    className="me-3"
-                  />
-                </a>
-                <a
-                  _ngcontent-nxk-c20=""
-                  href="https://discord.gg/SVPp65yR3M"
-                  target="_blank"
-                >
-                  <img
+                    href="https://t.me/AishibaCryptoOfficial"
+                    target="_blank"
+                  >
+                    <img
+                      _ngcontent-nxk-c20=""
+                      height={32}
+                      src={telegram}
+                      alt="yt"
+                      className="me-3"
+                    />
+                  </a>
+                  <a
                     _ngcontent-nxk-c20=""
-                    height={32}
-                    src={discord}
-                    alt="discord"
-                    className="me-3"
-                  />
-                </a>
-                <a
-                  _ngcontent-nxk-c20=""
-                  href="https://t.me/AiDogeCryptoOfficial"
-                  target="_blank"
-                >
-                  <img
-                    _ngcontent-nxk-c20=""
-                    height={32}
-                    src={telegram}
-                    alt="yt"
-                    className="me-3"
-                  />
-                </a>
-                <a
-                  _ngcontent-nxk-c20=""
-                  href="https://www.tiktok.com/@aidogecrypto"
-                  target="_blank"
-                  className="social pt-1"
-                >
-                  <img
-                    _ngcontent-nxk-c20=""
-                    height={25}
-                    src={tiktok}
-                    alt="yt"
-                  />
-                </a>
-              </div>
-              <div _ngcontent-nxk-c20="" className="mb-lg-5 mb-4">
+                    href="https://www.tiktok.com/@Aishibacrypto"
+                    target="_blank"
+                    className="social pt-1"
+                  >
+                    <img
+                      _ngcontent-nxk-c20=""
+                      height={25}
+                      src={tiktok}
+                      alt="yt"
+                    />
+                  </a>
+                </div> */}
+              <div _ngcontent-nxk-c20="" className="mb-lg-5 mb-4 text-start">
                 <img
                   _ngcontent-nxk-c20=""
                   src={logo_web}
                   alt=""
-                  className="d-none d-lg-block"
+                  className="d-none foooter_logo d-lg-block"
                 />
                 <img
                   _ngcontent-nxk-c20=""
-                  src={ai_footer}
+                  src={logo_web}
                   alt=""
-                  width={50}
-                  height={50}
+                  width={90}
+                  height={90}
                   className="d-lg-none d-block"
                 />
               </div>
@@ -115,32 +90,7 @@ function Footer() {
                 _ngcontent-nxk-c20=""
                 className="d-flex justify-content-center mb-5"
               >
-                <a
-                  _ngcontent-nxk-c20=""
-                  href="https://www.instagram.com/aidogecrypto/"
-                  target="_blank"
-                >
-                  <img
-                    _ngcontent-nxk-c20=""
-                    height={32}
-                    src={instagram}
-                    alt="insta"
-                    className="me-3"
-                  />
-                </a>
-                <a
-                  _ngcontent-nxk-c20=""
-                  href="https://twitter.com/aidogecrypto"
-                  target="_blank"
-                >
-                  <img
-                    _ngcontent-nxk-c20=""
-                    height={32}
-                    src={twitter}
-                    alt="twitter"
-                    className="me-3"
-                  />
-                </a>
+               
                 <a
                   _ngcontent-nxk-c20=""
                   href="https://discord.gg/QE5PdhbjUY"
@@ -156,7 +106,7 @@ function Footer() {
                 </a>
                 <a
                   _ngcontent-nxk-c20=""
-                  href="https://t.me/AiDogeCryptoOfficial"
+                  href="https://t.me/AishibaCryptoOfficial"
                   target="_blank"
                 >
                   <img
@@ -169,7 +119,7 @@ function Footer() {
                 </a>
                 <a
                   _ngcontent-nxk-c20=""
-                  href="https://www.tiktok.com/@aidogecrypto"
+                  href="https://www.tiktok.com/@Aishibacrypto"
                   target="_blank"
                   className="social pt-1"
                 >
@@ -188,6 +138,14 @@ function Footer() {
             </div>
             <div _ngcontent-nxk-c20="" className="divider d-none d-lg-block" />
           </div>
+
+
+
+
+
+
+
+
           <div
             _ngcontent-nxk-c20=""
             className="row mt-5 bottom align-items-center"
@@ -201,7 +159,7 @@ function Footer() {
                 <li _ngcontent-nxk-c20="">
                   <a
                     _ngcontent-nxk-c20=""
-                    href="./assets/documents/Aidoge_Privacy_Policy.pdf"
+                    href="./assets/documents/Aishiba_Privacy_Policy.pdf"
                     target="_blank"
                     className="text-white"
                   >
@@ -212,7 +170,7 @@ function Footer() {
                 <li _ngcontent-nxk-c20="">
                   <a
                     _ngcontent-nxk-c20=""
-                    href="./assets/documents/Aidoge_Cookie_Policy.pdf"
+                    href="./assets/documents/Aishiba_Cookie_Policy.pdf"
                     target="_blank"
                     className="text-white"
                   >
@@ -223,7 +181,7 @@ function Footer() {
                 <li _ngcontent-nxk-c20="">
                   <a
                     _ngcontent-nxk-c20=""
-                    href="./assets/documents/Aidoge_Terms_Of_Service.pdf"
+                    href="./assets/documents/Aishiba_Terms_Of_Service.pdf"
                     target="_blank"
                     className="text-white"
                   >
@@ -241,23 +199,16 @@ function Footer() {
                 <span
                   _ngcontent-nxk-c20=""
                   translate=""
-                  className="me-2 color-footer"
+                  className="me-2 new_text_here"
                 >
-                  © 2023 AiDoge
+                  © 2023 Aishiba
                 </span>
                 <span _ngcontent-nxk-c20="" translate="">
                   All Rights Reserved.
                 </span>
               </div>
             </div>
-            <div _ngcontent-nxk-c20="" className="col-lg-4 d-none d-lg-block">
-              <div _ngcontent-nxk-c20="" className="font-14 text-white address">
-                <span _ngcontent-nxk-c20="" translate="">
-                  Plaza 2000, Calle 50 and Marbella, Corregimiento de Bella
-                  Vista, Panama City, Panama
-                </span>
-              </div>
-            </div>
+          
           </div>
           <div
             _ngcontent-nxk-c20=""
@@ -267,9 +218,9 @@ function Footer() {
               <span
                 _ngcontent-nxk-c20=""
                 translate=""
-                className="me-2 color-footer"
+                className="me-2 new_text_here"
               >
-                © 2023 AiDoge
+                © 2023 Aishiba
               </span>
               <span _ngcontent-nxk-c20="" translate="">
                 All Rights Reserved.
@@ -296,3 +247,69 @@ function Footer() {
 }
 
 export default Footer;
+
+
+
+   {/* <a
+                  _ngcontent-nxk-c20=""
+                  href="https://www.instagram.com/Aishibacrypto/"
+                  target="_blank"
+                >
+                  <img
+                    _ngcontent-nxk-c20=""
+                    height={32}
+                    src={instagram}
+                    alt="insta"
+                    className="me-3"
+                  />
+                </a> */}
+                {/* <a
+                  _ngcontent-nxk-c20=""
+                  href="https://twitter.com/Aishibacrypto"
+                  target="_blank"
+                >
+                  <img
+                    _ngcontent-nxk-c20=""
+                    height={32}
+                    src={twitter}
+                    alt="twitter"
+                    className="me-3"
+                  />
+                </a> */}
+
+
+                 {/* <a
+                  _ngcontent-nxk-c20=""
+                  href="https://www.instagram.com/Aishibacrypto/"
+                  target="_blank"
+                >
+                  <img
+                    _ngcontent-nxk-c20=""
+                    height={32}
+                    src={instagram}
+                    alt="insta"
+                    className="me-3"
+                  />
+                </a>
+                <a
+                  _ngcontent-nxk-c20=""
+                  href="https://twitter.com/Aishibacrypto"
+                  target="_blank"
+                >
+                  <img
+                    _ngcontent-nxk-c20=""
+                    height={32}
+                    src={twitter}
+                    alt="twitter"
+                    className="me-3"
+                  />
+                </a> */}
+
+                  {/* <div _ngcontent-nxk-c20="" className="col-lg-4 d-none d-lg-block">
+              <div _ngcontent-nxk-c20="" className="font-14 text-white address">
+                <span _ngcontent-nxk-c20="" translate="">
+                  Plaza 2000, Calle 50 and Marbella, Corregimiento de Bella
+                  Vista, Panama City, Panama
+                </span>
+              </div>
+            </div> */}

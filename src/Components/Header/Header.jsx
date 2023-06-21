@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.css";
-import logo_web from "../../assets/logo_web.png";
+import logo_web from "../../assets/logo.png";
 import ai_logo from "../../assets/ai_footer.svg";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -63,14 +63,14 @@ function Header() {
         id="navbar"
       >
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#home" className="shfkfnwjfn">
             <img
               src={logo_web}
-              width="190"
+              // width="190"
               alt=""
-              className="brand-logo_refrst"
+              className="brand-logo_refrst  hhh_logog"
             />
-            <img className="brand-logo_res" src={ai_logo} alt="" />
+            <img className="brand-logo_res" src={logo_web} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -94,7 +94,7 @@ function Header() {
                 FAQ
               </Nav.Link>
 
-              <select
+              {/* <select
                 className="language"
                 value={selectedValue}
                 onChange={handleChange}
@@ -108,7 +108,7 @@ function Header() {
                 <option value="Hungarian">Hungarian</option>
                 <option value="Japanese">Japanese</option>
                 <option value="Korean">Korean</option>
-              </select>
+              </select> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

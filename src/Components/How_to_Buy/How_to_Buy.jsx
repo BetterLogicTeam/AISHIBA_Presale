@@ -18,7 +18,7 @@ function How_to_Buy() {
             className="header-text pt-5 text-start text-md-center fw-bold mb-4"
           >
             How To Buy{" "}
-            <span _ngcontent-nxk-c14="" translate="" className="text-tourquise">
+            <span _ngcontent-nxk-c14="" translate="" className="new_text_here">
               $AI
             </span>
           </h2>
@@ -55,7 +55,7 @@ function How_to_Buy() {
             </div>
             <h3
               _ngcontent-nxk-c14=""
-              className="font-26 fw-semibold text-tourquise text-center title mb-0"
+              className="font-26 fw-semibold new_text_here text-center title mb-0"
             >
               {" "}
               USE ETH OR BNB{" "}
@@ -90,7 +90,7 @@ function How_to_Buy() {
             </div>
             <h3
               _ngcontent-nxk-c14=""
-              className="font-26 fw-semibold text-tourquise text-center title mb-0"
+              className="font-26 fw-semibold new_text_here text-center title mb-0"
             >
               {" "}
               USE USDT{" "}
@@ -107,7 +107,7 @@ function How_to_Buy() {
             </p>
           </div>
         </div>
-        <div
+        {/* <div
           _ngcontent-nxk-c14=""
           className="col-md-6 col-lg-4 col-xl-3 mb-4 d-flex align-items-center justify-content-center ng-star-inserted"
         >
@@ -125,7 +125,7 @@ function How_to_Buy() {
             </div>
             <h3
               _ngcontent-nxk-c14=""
-              className="font-26 fw-semibold text-tourquise text-center title mb-0"
+              className="font-26 fw-semibold new_text_here text-center title mb-0"
             >
               {" "}
               USE YOUR CARD{" "}
@@ -141,7 +141,7 @@ function How_to_Buy() {
               connected wallet.
             </p>
           </div>
-        </div>
+        </div> */}
         {/**/}
       </div>
     </div>

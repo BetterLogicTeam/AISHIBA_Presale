@@ -3,8 +3,8 @@ import "./Hero.css";
 import eth from "../../assets/eth.svg";
 import usdt from "../../assets/usdt.svg";
 import bnb from "../../assets/bnb.svg";
-import instagram from "../../assets/social-instagram.svg";
-import twitter from "../../assets/social-twitter.svg";
+// import instagram from "../../assets/social-instagram.svg";
+// import twitter from "../../assets/social-twitter.svg";
 import discord from "../../assets/social-discord.svg";
 import telegram from "../../assets/social-telegram.svg";
 import tiktok from "../../assets/social-tiktok.svg";
@@ -18,8 +18,8 @@ function Hero() {
 
   return (
     <div>
-      <div _ngcontent-nxk-c11="" className="background">
-        <div
+      <div _ngcontent-nxk-c11="" className="background new_bg" >
+        {/* <div
           _ngcontent-nxk-c11=""
           className="header-logo d-flex flex-column align-items-center justify-content-center w-100 d-md-none"
         >
@@ -41,36 +41,55 @@ function Hero() {
               platform
             </span>
           </h1>
-        </div>
+        </div> */}
         <div
           _ngcontent-nxk-c11=""
-          className="container row d-sm-flex align-items-start mx-sm-3"
+          className="container  row d-sm-flex  mx-sm-3"
         >
+        <div className="col-md-6">
+
+        <div className="new_b_c">
+
+        
+          <h1>a unified platform to a decenteralized world</h1>
+          <p className="haeding_para">
+          Aishiba aims to create a seamless network that connects various blockchain platforms, enabling a robust cross-chain ecosystem for decentralized finance (DeFi). By providing essential infrastructure and support, Aishiba strives to empower users with a secure, transparent, and unrestricted DeFi experience.
+          </p>
+      
+      <div className="d-flex  mt-5 gap-4">
+        {/* <button className="white_paper_btn"> whitepaper</button> */}
+        <button className="heading_btn"> <span class="text">Whitepaper</span>
+  <span class="blob"></span>
+  <span class="blob"></span>
+  <span class="blob"></span>
+  <span class="blob"></span>
+</button>
+        <button className="heading_btn"> <span class="text">Audit</span>
+  <span class="blob"></span>
+  <span class="blob"></span>
+  <span class="blob"></span>
+  <span class="blob"></span>
+</button>
+        {/* <button className="white_paper_btn"> audit</button> */}
+      </div>
+      
+        </div>
+        </div>
+
+    
+
+       
+         
+
+
+
           <div
             _ngcontent-nxk-c11=""
-            className="col-lg-7 leftSec align-self-end order-2 order-lg-1"
+            className="col-lg-6 right mb-4 order-1 order-lg-2"
           >
-            <div
-              _ngcontent-nxk-c11=""
-              className="d-flex d-lg-block align-items-center justify-content-center mb-3 mb-md-5 pb-0 pb-md-4"
-            >
-              <a
-                _ngcontent-nxk-c11=""
-                href="./assets/documents/Aidoge_Whitepaper.pdf"
-                target="_blank"
-                translate=""
-                className="btn btn-whitepaper btn-outline-primary font-20"
-              >
-                Whitepaper
-              </a>
-            </div>
-          </div>
-          <div
-            _ngcontent-nxk-c11=""
-            className="col-lg-5 right mb-4 order-1 order-lg-2"
-          >
-            <div _ngcontent-nxk-c11="" className="walletBox bg-primary">
-              <div _ngcontent-nxk-c11="">
+
+            <div _ngcontent-nxk-c11="" className="walletBox ">
+              <div _ngcontent-nxk-c11="" className="text-white borrrr_shs">
                 <div
                   _ngcontent-nxk-c11=""
                   className="bg-bluegrad d-flex flex-column align-items-center justify-content-start p-4 text-white text-center"
@@ -108,6 +127,7 @@ function Hero() {
                       08s
                     </div>
                   </div>
+                  
                   <p
                     _ngcontent-nxk-c11=""
                     className="mt-3 mb-2 font-20 fw-semibold claim-title"
@@ -116,9 +136,25 @@ function Hero() {
                     Claim and Exchange Listings June 19th. Last Chance to Buy
                     Now!{" "}
                   </p>
-                  {/**/}
+               
+
+              
+                
+                  
                 </div>
-                <div _ngcontent-nxk-c11="" className="bg-white p-4 swapArea">
+                <div className="main_pooo">
+                <div className="progress_bar">
+                  <div className="clor"></div>
+                  <p className="stage_text">next stage price  :$0.0031</p>
+
+                </div>
+                <p className="text-center mt-3">usdt raised:$8,983,485.74/$9,909.09</p>
+                  
+                </div>
+
+             
+              
+                <div _ngcontent-nxk-c11="" className="bg_new_here p-4 swapArea">
                   <p
                     _ngcontent-nxk-c11=""
                     className="text-center mb-3 font-14 dashTitle fw-semibold"
@@ -133,8 +169,8 @@ function Hero() {
                       _ngcontent-nxk-c11=""
                       className={
                         collection == 0
-                          ? "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
-                          : "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
+                          ? "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
                       }
                       onClick={() => handleButtonClick(0)}
                     >
@@ -150,8 +186,8 @@ function Hero() {
                       _ngcontent-nxk-c11=""
                       className={
                         collection == 1
-                          ? "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
-                          : "btn btn-light eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
+                          ? "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
                       }
                       onClick={() => handleButtonClick(1)}
                     >
@@ -165,18 +201,18 @@ function Hero() {
                         _ngcontent-nxk-c11=""
                         className="text-center flex-grow-1 px-2 fw-semibold d-flex flex-column"
                       >
-                        <span _ngcontent-nxk-c11=""> USDT </span>
-                        <span _ngcontent-nxk-c11="" className="font-10 subtext">
+                        <span _ngcontent-nxk-c11=""> BUSD </span>
+                        {/* <span _ngcontent-nxk-c11="" className="font-10 subtext">
                           ERC20
-                        </span>
+                        </span> */}
                       </div>
                     </button>
                     <button
                       _ngcontent-nxk-c11=""
                       className={
                         collection == 2
-                          ? "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
-                          : "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                          ? "btn new_yello_btn font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn new_yello_btn font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
                       }
                       onClick={() => handleButtonClick(2)}
                     >
@@ -188,12 +224,12 @@ function Hero() {
                         BNB
                       </span>
                     </button>
-                    <button
+                    {/* <button
                       _ngcontent-nxk-c11=""
                       className={
                         collection == 3
-                          ? "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
-                          : "btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                          ? "btn new_yello_btn font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn new_yello_btn font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
                       }
                       onClick={() => handleButtonClick(3)}
                     >
@@ -212,42 +248,25 @@ function Hero() {
                           BEP20
                         </span>
                       </div>
-                    </button>
-                    {/* <button
-                      _ngcontent-nxk-c11=""
-                      className="btn btn-light font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
-                    >
-                      <img
-                        _ngcontent-nxk-c11=""
-                        src="/assets/images/svg-icons/card.svg"
-                        height={22}
-                        alt=""
-                      />
-                      <span
-                        _ngcontent-nxk-c11=""
-                        translate=""
-                        className="text-center flex-grow-1 px-2 fw-semibold"
-                      >
-                        CARD
-                      </span>
                     </button> */}
+             
                   </div>
                   <app-swap _ngcontent-nxk-c11="" _nghost-nxk-c10="">
-                    <div _ngcontent-nxk-c10="" className="swapSection my-3">
+                    <div _ngcontent-nxk-c10="" className="swapSection  new_swap_son my-3">
                       <div
                         _ngcontent-nxk-c10=""
                         className="text-center border-bottom pb-2"
                       >
                         <span
                           _ngcontent-nxk-c10=""
-                          className="ms-2 text-mid-grey font-14 fw-semibold ng-star-inserted"
+                          className="ms-2 text-white font-14 fw-semibold ng-star-inserted"
                         >
                           ETH balance 0
                         </span>
-                        {/**/}
-                        {/**/}
+                     
+                        
                       </div>
-                      {/**/}
+                  
                       <div
                         _ngcontent-nxk-c10=""
                         className="body-section ng-star-inserted"
@@ -260,7 +279,7 @@ function Hero() {
                             >
                               <label
                                 _ngcontent-nxk-c10=""
-                                className="d-block text-mid-grey font-14"
+                                className="d-block text-white font-14"
                               >
                                 {" "}
                                 Amount in{" "}
@@ -279,11 +298,11 @@ function Hero() {
                               </label>
                               <div
                                 _ngcontent-nxk-c10=""
-                                className="fw-bold text-primary cursor-pointer font-14 ng-star-inserted"
+                                className="fw-bold text-white cursor-pointer font-14 ng-star-inserted"
                               >
                                 Max{" "}
                               </div>
-                              {/**/}
+                              
                             </div>
                             <div
                               _ngcontent-nxk-c10=""
@@ -324,7 +343,7 @@ function Hero() {
                             >
                               <label
                                 _ngcontent-nxk-c10=""
-                                className="d-block text-mid-grey font-14"
+                                className="d-block text-white font-14"
                               >
                                 {" "}
                                 Amount in{" "}
@@ -401,20 +420,11 @@ function Hero() {
                             is reserved for gas. The actual amount used will
                             depend on the network.
                           </div>
-                          {/**/}
-                          {/**/}
+                      
                         </div>
-                        {/**/}
-                        {/**/}
-                        {/**/}
+                    
                       </div>
-                      {/**/}
-                      {/**/}
-                      {/**/}
-                      {/**/}
-                      {/**/}
-                      {/**/}
-                      {/**/}
+                    
                     </div>
                   </app-swap>
                   <div
@@ -424,49 +434,30 @@ function Hero() {
                     <button
                       _ngcontent-nxk-c11=""
                       translate=""
-                      className="btn btn-primary font-14 mb-3 w-75 text-white wh-42 ng-star-inserted"
+                      className="btn new_buy_now_btn font-14 mb-3 w-75 text-white wh-42 ng-star-inserted"
                     >
                       Buy Now
                     </button>
-                    {/**/}
-                    {/**/}
+                  
                     <div _ngcontent-nxk-c11="" className="font-14 text-center">
                       LISTING PRICE: $0.0000336
                     </div>
                   </div>
                 </div>
+
+            
               </div>
             </div>
+
+
+
+
+            {/* social media links are here  */}
             <div
               _ngcontent-nxk-c11=""
               className="d-flex justify-content-center social-wrapper mt-5 mb-4 mb-md-5"
             >
-              <a
-                _ngcontent-nxk-c11=""
-                href="https://www.instagram.com/aidogecrypto/"
-                target="_blank"
-                className="social mx-3"
-              >
-                <img
-                  _ngcontent-nxk-c11=""
-                  height={40}
-                  src={instagram}
-                  alt="insta"
-                />
-              </a>
-              <a
-                _ngcontent-nxk-c11=""
-                href="https://twitter.com/aidogecrypto"
-                target="_blank"
-                className="social mx-3"
-              >
-                <img
-                  _ngcontent-nxk-c11=""
-                  height={40}
-                  src={twitter}
-                  alt="twitter"
-                />
-              </a>
+             
               <a
                 _ngcontent-nxk-c11=""
                 href="https://discord.gg/QE5PdhbjUY"
@@ -503,10 +494,65 @@ function Hero() {
               </a>
             </div>
           </div>
+        
+
+
+
         </div>
+
+
       </div>
     </div>
   );
 }
 
 export default Hero;
+
+
+ {/* <a
+                _ngcontent-nxk-c11=""
+                href="https://www.instagram.com/aidogecrypto/"
+                target="_blank"
+                className="social mx-3"
+              >
+                <img
+                  _ngcontent-nxk-c11=""
+                  height={40}
+                  src={instagram}
+                  alt="insta"
+                />
+              </a> */}
+              {/* <a
+                _ngcontent-nxk-c11=""
+                href="https://twitter.com/aidogecrypto"
+                target="_blank"
+                className="social mx-3"
+              >
+                <img
+                  _ngcontent-nxk-c11=""
+                  height={40}
+                  src={twitter}
+                  alt="twitter"
+                />
+              </a> */}
+
+
+
+                     {/* <button
+                      _ngcontent-nxk-c11=""
+                      className="btn new_yello_btn font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
+                    >
+                      <img
+                        _ngcontent-nxk-c11=""
+                        src="/assets/images/svg-icons/card.svg"
+                        height={22}
+                        alt=""
+                      />
+                      <span
+                        _ngcontent-nxk-c11=""
+                        translate=""
+                        className="text-center flex-grow-1 px-2 fw-semibold"
+                      >
+                        CARD
+                      </span>
+                    </button> */}

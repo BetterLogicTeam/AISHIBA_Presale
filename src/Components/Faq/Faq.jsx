@@ -32,24 +32,24 @@ function Faq() {
               >
                 <h2
                   _ngcontent-nxk-c16=""
-                  className="header-text text-tourquise mb-3 fw-bold p-3"
+                  className="header-text new_text_here   mb-3 fw-bold p-3"
                 >
                   Frequently Asked Questions
                 </h2>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header> What is AiDoge ? </Accordion.Header>
+                    <Accordion.Header> What is aishiba ? </Accordion.Header>
                     <Accordion.Body className="accor_heading">
-                      AiDoge is a next-level, AI-powered meme generation
+                      aishiba is a next-level, AI-powered meme generation
                       platform designed to revolutionise the way crypto memes
                       are created and shared.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item className="mt-3" eventKey="1">
-                    <Accordion.Header> Why AiDoge ? </Accordion.Header>
+                    <Accordion.Header> Why aishiba ? </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       {" "}
-                      AiDoge is addressing a growing problem on Crypto Twitter
+                      aishiba is addressing a growing problem on Crypto Twitter
                       and other social media - the regurgitation of the same
                       stale memes. We’re injecting life into meme creation
                       through the power of $AI tokens.{" "}
@@ -96,7 +96,7 @@ function Faq() {
                       When will I be able to generate AI memes ?
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
-                      The AiDoge meme generation platform is earmarked to go
+                      The aishiba meme generation platform is earmarked to go
                       live in Q4 2023 and will operate based on users’ credit
                       balances earned via staking.
                     </Accordion.Body>
@@ -108,7 +108,7 @@ function Faq() {
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
                       Staking $AI tokens builds up credits for users. Credits
-                      will allow access to the AiDoge platform’s meme generation
+                      will allow access to the aishiba platform’s meme generation
                       features.
                     </Accordion.Body>
                   </Accordion.Item>
