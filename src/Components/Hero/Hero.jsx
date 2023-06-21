@@ -163,7 +163,7 @@ function Hero() {
                   </p>
                   <div
                     _ngcontent-nxk-c11=""
-                    className="tab-container row d-flex align-items-center justify-content-md-around justify-content-center gap-2"
+                    className="tab-container row d-flex align-items-center justify-content-md-around justify-content-center gap-1 "
                   >
                     <button
                       _ngcontent-nxk-c11=""
