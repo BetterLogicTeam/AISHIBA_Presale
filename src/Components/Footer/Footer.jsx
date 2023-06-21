@@ -226,20 +226,20 @@ function Footer() {
                 All Rights Reserved.
               </span>
               <br _ngcontent-nxk-c20="" />
-              <span _ngcontent-nxk-c20="" translate="">
+              {/* <span _ngcontent-nxk-c20="" translate="">
                 Plaza 2000, Calle 50 and Marbella, Corregimiento de Bella Vista,
                 Panama City, Panama
-              </span>
+              </span> */}
             </div>
           </div>
-          <div _ngcontent-nxk-c20="" className="col-lg-12 my-3">
-            <p _ngcontent-nxk-c20="" className="info-text font-12 text-center">
-              Cryptocurrency may be unregulated in your jurisdiction. The value
-              of cryptocurrencies may go down as well as up. Profits may be
-              subject to capital gains or other taxes applicable in your
-              jurisdiction.
-            </p>
-          </div>
+            {/* <div _ngcontent-nxk-c20="" className="col-lg-12 my-3">
+              <p _ngcontent-nxk-c20="" className="info-text font-12 text-center">
+                Cryptocurrency may be unregulated in your jurisdiction. The value
+                of cryptocurrencies may go down as well as up. Profits may be
+                subject to capital gains or other taxes applicable in your
+                jurisdiction.
+              </p>
+            </div> */}
         </div>
       </ico-footer>
     </div>

@@ -5,12 +5,14 @@
 
 
 .main_about_al{
-    color: white !important;
+    background: linear-gradient(to right, #00ff7d, #f8ff00) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: left !important;
     text-transform: capitalize !important;
     font-weight: 700 !important;
     font-size: 36px !important;
-    line-height: 1.5px !important;
+    /* line-height: 1.5px !important; */
     margin-bottom: 2rem !important;
 }
 
@@ -33,7 +35,10 @@
 
 .lower_cotetn h5{
     font-size: 20px !important;
-    font-weight: 700 !important;
+    font-weight: 700 !important;    background: linear-gradient(to right, #00ff7d, #f8ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 

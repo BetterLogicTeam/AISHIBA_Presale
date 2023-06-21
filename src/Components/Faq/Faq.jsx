@@ -10,8 +10,8 @@ function Faq() {
       <ico-faq _ngcontent-nxk-c18="" _nghost-nxk-c16="">
         <section _ngcontent-nxk-c16="" id="faq" className="faq">
           <div _ngcontent-nxk-c16="" className="container py-5 mt-4 mb-3">
-            <div _ngcontent-nxk-c16="" className="row py-5">
-              <div
+            <div _ngcontent-nxk-c16="" className="row justify-content-center py-5">
+              {/* <div
                 _ngcontent-nxk-c16=""
                 className="col-lg-6 order-1 order-lg-1"
               >
@@ -25,7 +25,7 @@ function Faq() {
                   src={faq_mob}
                   className="w-100 d-block d-md-none mb-5"
                 />
-              </div>
+              </div> */}
               <div
                 _ngcontent-nxk-c16=""
                 className="col-lg-6 order-1 order-lg-1"

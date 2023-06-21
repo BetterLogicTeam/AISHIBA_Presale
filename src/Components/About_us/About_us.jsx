@@ -16,12 +16,16 @@ export default function About_us() {
 
             <div className="col-md-6">
             <div className="about_us_contetn">
-                <h1 className='main_about_al'>About alishba</h1>
-                {/* <h1 className='main_about_al'>About Renqa</h1> */}
+                <h1 className='main_about_al'>About AISHIBA </h1>
+                {/* <h1 className='main_about_al'>About AISHIBAa</h1> */}
       
       
       
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea sed praesentium corrupti sapiente, in fuga odit iusto doloremque molestiae id quam beatae sunt maiores aliquid aliquam quis blanditiis nostrum.</p>
+                <p>
+                AISHIBA is a community-driven organization that is established to provide a one stop solution for all kind of traders under one platform in the DeFi world.
+We aim to empower our users with a comprehensive solution by providing them a platform that has benefits of a centralized exchange and beyond.
+                {/* Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea sed praesentium corrupti sapiente, in fuga odit iusto doloremque molestiae id quam beatae sunt maiores aliquid aliquam quis blanditiis nostrum. */}
+                </p>
 
 <div className="row">
     <div className="col-md-2 mt-3 d-none d-md-block">
@@ -37,13 +41,13 @@ export default function About_us() {
 <div className="lower_cotetn">
     <h5>Never Ending Liquidity</h5>
     <p>
-    Renq obtains its liquidity from a variety of exchanges and has the capacity to distribute a single trade transaction across multiple DEXs in order to obtain the most competitive prices.
+    AISHIBA obtains its liquidity from a variety of exchanges and has the capacity to distribute a single trade transaction across multiple DEXs in order to obtain the most competitive prices.
     </p>
 </div>
 <div className="lower_cotetn">
     <h5>Community Driven</h5>
     <p>
-    Governed by its community, via forum discussions and, when pertinent, voting on proposals by the RENQ Holders.
+    Governed by its community, via forum discussions and, when pertinent, voting on proposals by the AISHIBA Holders.
     </p>
 </div>
     </div>
