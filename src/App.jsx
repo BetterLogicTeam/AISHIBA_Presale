@@ -13,6 +13,7 @@ import Faq from './Components/Faq/Faq'
 import Footer from './Components/Footer/Footer'
 import About_us from './Components/About_us/About_us'
 import Tokenomics from './Components/Tokenomics/Tokenomics'
+import Team from './Components/Team/Team'
 
 function App() {
   const [count, setCount] = useState(2)
@@ -65,6 +66,7 @@ function App() {
       {/* <Ai_token /> */}
       {/* <How_to_Buy /> */}
       <Roadmap milestones={milestones}/>
+      <Team/>
         {/* <Airdrop /> */}
       <Faq />
       <Footer />

@@ -18,7 +18,7 @@ function Hero() {
 
   return (
     <div>
-      <div _ngcontent-nxk-c11="" className="background new_bg" >
+      <div _ngcontent-nxk-c11="" className="background new_bg" id="home" >
         {/* <div
           _ngcontent-nxk-c11=""
           className="header-logo d-flex flex-column align-items-center justify-content-center w-100 d-md-none"

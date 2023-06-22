@@ -5,7 +5,7 @@ import ai from "../../assets/ai.png"
 
 export default function About_us() {
   return (
-    <div className='main_about_us'>
+    <div className='main_about_us' id='about'>
 
     <div className="container">
         <div className="row align-items-center">

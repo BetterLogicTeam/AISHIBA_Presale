@@ -70,25 +70,25 @@ function Header() {
               alt=""
               className="brand-logo_refrst  hhh_logog"
             />
-            <img className="brand-logo_res" src={logo_web} alt="" />
+            <img className="brand-logo_res" src={logo_web} alt="" href="#about" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-end flex-grow-1 pe-5 ps-5">
-              <Nav.Link href="#Platform" className="header_ka">
+              {/* <Nav.Link href="#home" className="header_ka">
                 Platform
+              </Nav.Link> */}
+              <Nav.Link href="#about" className="header_ka">
+                About Us
               </Nav.Link>
-              <Nav.Link href="#ai-Token" className="header_ka">
-                $AI Token
-              </Nav.Link>
-              <Nav.Link href="#how-to-buy" className="header_ka">
-                How To Buy
+              <Nav.Link href="#tokenomics" className="header_ka">
+              Tokenomics
               </Nav.Link>
               <Nav.Link href="#roadmap" className="header_ka">
                 Roadmap
               </Nav.Link>
-              <Nav.Link href="#airdrop" className="header_ka">
-                Airdrop
+              <Nav.Link href="#team" className="header_ka">
+                Team
               </Nav.Link>
               <Nav.Link href="#faq" className="header_ka">
                 FAQ

@@ -83,7 +83,7 @@ function Footer() {
                   alt=""
                   width={90}
                   height={90}
-                  className="d-lg-none d-block"
+                  className="d-lg-none d-block smallView"
                 />
               </div>
               <div
