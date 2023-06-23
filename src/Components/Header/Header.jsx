@@ -70,7 +70,7 @@ function Header() {
               alt=""
               className="brand-logo_refrst  hhh_logog"
             />
-            <img className="brand-logo_res hhh_logog" src={logo_web} alt="" href="#about" />
+            <img className="d-block d-lg-none hhh_logog" src={logo_web} alt="" href="#about" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

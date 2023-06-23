@@ -518,6 +518,9 @@ margin-top: 2rem !important;
         .stage_text {
             margin-left: 3.5rem !important;
         }
+        .hhh_logog{
+            width: 66% !important;
+        }
     }
 
 
@@ -529,6 +532,20 @@ margin-top: 2rem !important;
         }
     }
     
+
+
+
+
+
+    @media only screen and (max-width:340px) {
+        .walletBox[_ngcontent-nxk-c11] {
+            width: 100% !important;
+        }
+        
+    }
+
+
+
 
 
  
