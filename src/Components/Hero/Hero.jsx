@@ -211,11 +211,11 @@ function Hero() {
                     <button
                       _ngcontent-nxk-c11=""
                       className={
-                        collection == 1
+                        collection == 3
                           ? "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
                           : "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
                       }
-                      onClick={() => handleButtonClick(1)}
+                      onClick={() => handleButtonClick(3)}
                     >
                       <img
                         _ngcontent-nxk-c11=""
@@ -298,7 +298,7 @@ function Hero() {
                         className="body-section ng-star-inserted"
                       >
                         <div _ngcontent-nxk-c10="" className="row">
-                          <div _ngcontent-nxk-c10="" className="col-md-6">
+                          <div _ngcontent-nxk-c10="" className="col-md-6 pe-0">
                             <div
                               _ngcontent-nxk-c10=""
                               className="d-flex align-items-center justify-content-between mb-1"
@@ -317,7 +317,7 @@ function Hero() {
                                     : collection == 2
                                     ? "BNB"
                                     : collection == 3
-                                    ? "USDT"
+                                    ? "BUSD"
                                     : null}
                                 </span>{" "}
                                 you pay{" "}
@@ -356,7 +356,7 @@ function Hero() {
                                   ) : collection == 2 ? (
                                     <img src={bnb} alt="" height={25} />
                                   ) : collection == 3 ? (
-                                    <img src={usdt} alt="" height={25} />
+                                    <img src={busd} alt="" height={25} />
                                   ) : null}
                                 </div>
                               </div>
@@ -443,7 +443,7 @@ function Hero() {
                               : collection == 2
                               ? "BNB"
                               : collection == 3
-                              ? "USDT"
+                              ? "BUSD"
                               : null}{" "}
                             is reserved for gas. The actual amount used will
                             depend on the network.
