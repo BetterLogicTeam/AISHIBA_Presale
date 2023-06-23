@@ -8,7 +8,7 @@ import busd from "../../assets/busd.svg";
 import logo from "../../assets/logo.png"
 // import instagram from "../../assets/social-instagram.svg";
 // import twitter from "../../assets/social-twitter.svg";
-import discord from "../../assets/social-discord.svg";
+import twitter from "../../assets/tw.svg";
 import telegram from "../../assets/social-telegram.svg";
 import tiktok from "../../assets/social-tiktok.svg";
 
@@ -92,6 +92,7 @@ function Hero() {
           >
 
             <div _ngcontent-nxk-c11="" className="walletBox ">
+            {/* <h5 className="presale_start">presale will start soon</h5> */}
               <div _ngcontent-nxk-c11="" className="text-white borrrr_shs">
                 <div
                   _ngcontent-nxk-c11=""
@@ -488,20 +489,20 @@ function Hero() {
              
               <a
                 _ngcontent-nxk-c11=""
-                href="https://discord.gg/QE5PdhbjUY"
+                href="https://twitter.com/aishib_pro?s=21"  
                 target="_blank"
                 className="social mx-3"
               >
                 <img
                   _ngcontent-nxk-c11=""
                   height={40}
-                  src={discord}
-                  alt="discord"
+                  src={twitter}
+                  alt="twitter"
                 />
               </a>
               <a
                 _ngcontent-nxk-c11=""
-                href="https://t.me/AiDogeCryptoOfficial"
+                href="https://t.me/Aishiba_io"
                 target="_blank"
                 className="social mx-3"
               >
@@ -512,14 +513,14 @@ function Hero() {
                   alt="yt"
                 />
               </a>
-              <a
+              {/* <a
                 _ngcontent-nxk-c11=""
                 href="https://www.tiktok.com/@aidogecrypto"
                 target="_blank"
                 className="social mx-3 pt-1"
               >
                 <img _ngcontent-nxk-c11="" height={30} src={tiktok} alt="yt" />
-              </a>
+              </a> */}
             </div>
           </div>
         

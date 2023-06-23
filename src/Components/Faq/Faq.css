@@ -44,6 +44,10 @@
     text-transform: capitalize !important;
 }
 
+.faq_hede{
+    font-size: 40px !important;
+}
+
 .accordion-item{
     border: 1px solid #4acfff !important;
     border-left: none !important;
@@ -96,6 +100,7 @@
     background: linear-gradient(to right, #00ff7d, #f8ff00)!important;
       -webkit-background-clip: text !important;
       -webkit-text-fill-color: transparent !important;
+      text-transform: capitalize !important;
 }
 
 .accordion-item{

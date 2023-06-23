@@ -109,7 +109,7 @@ function Footer() {
 
                 <a
                   _ngcontent-nxk-c20=""
-                  href="https://t.me/AishibaCryptoOfficial"
+                  href="https://t.me/Aishiba_io"
                   target="_blank"
                 >
                   <img

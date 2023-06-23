@@ -32,7 +32,7 @@ function Faq() {
               >
                 <h2
                   _ngcontent-nxk-c16=""
-                  className="header-text new_text_here   mb-3 fw-bold p-3"
+                  className="faq_hede new_text_here   mb-3 fw-bold p-3"
                 >
                   Frequently Asked Questions
                 </h2>

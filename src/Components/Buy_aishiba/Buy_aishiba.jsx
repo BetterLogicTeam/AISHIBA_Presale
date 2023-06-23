@@ -15,7 +15,7 @@ Take the lead and secure your Aishiba tokens in the presale using ETH, BNB, USDT
 {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed porro modi temporibus voluptate ad! Quasi natus, nesciunt distinctio id alias praesentium similique dolorum enim provident aperiam quia a ipsam. */}
 </p>
         <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 ">
                 <div className="buy_cards text-white text-center">
                 <h1 className='text-white text-center'>1.</h1>
                 <p>
@@ -24,7 +24,7 @@ Take the lead and secure your Aishiba tokens in the presale using ETH, BNB, USDT
 
                 </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mt-3 mt-md-0">
                 <div className="buy_cards text-white text-center">
                 <h1 className='text-white text-center'>2.</h1>
                 <p>
@@ -33,7 +33,7 @@ Take the lead and secure your Aishiba tokens in the presale using ETH, BNB, USDT
 
                 </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 mt-3 mt-md-0">
                 <div className="buy_cards text-white text-center">
                 <h1 className='text-white text-center'>3.</h1>
                 <p>
