@@ -250,3 +250,12 @@ option{
 .shfkfnwjfn{
     width: 20% !important;
 }
+
+
+
+
+@media only screen and (min-width:950px ) and (max-width:1100px){
+    .hhh_logog{
+        width: 20% !important;
+    }
+}
