@@ -47,9 +47,9 @@ function Hero() {
         </div> */}
         <div
           _ngcontent-nxk-c11=""
-          className="container  row d-sm-flex  mx-sm-3"
+          className="container slfkk  row d-sm-flex  mx-sm-3"
         >
-        <div className="col-md-6">
+        <div className="col-md-6 ">
 
         <div className="new_b_c">
 
