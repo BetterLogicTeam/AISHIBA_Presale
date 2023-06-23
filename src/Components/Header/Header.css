@@ -243,7 +243,7 @@ option{
 
 
 .hhh_logog{
-    width: 30% !important;
+    width: 35% !important;
 }
 
 
@@ -252,10 +252,20 @@ option{
 }
 
 
+@media  only screen and (max-width:600px){
+    .hhh_logog{
+        width: 100% !important;
+    }
+}
 
+@media (min-width: 601px) and (max-width: 949px) {
+    .hhh_logog{
+        width: 47% !important;
+    }
+}
 
 @media only screen and (min-width:950px ) and (max-width:1100px){
     .hhh_logog{
-        width: 25% !important;
+        width: 35% !important;
     }
 }
