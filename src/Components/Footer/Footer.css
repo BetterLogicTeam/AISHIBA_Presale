@@ -30,12 +30,12 @@ a[_ngcontent-nxk-c20] {
 
 
 .foooter_logo{
-    width: 30% !important;
+    width: 24% !important;
 }
 
 @media only screen and (max-width:600px) {
     .smallView{
         width: 96px;
-        height: 117px;
+        height: 96px;
     }
 }
