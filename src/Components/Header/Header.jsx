@@ -3,12 +3,12 @@ import "./Header.css";
 import logo_web from "../../assets/logo.png";
 import ai_logo from "../../assets/ai_footer.svg";
 import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
+// import Container from "react-bootstrap/Container";
+// import Form from "react-bootstrap/Form";
+// import Nav from "react-bootstrap/Nav";
+import {Navbar,Nav,Form,Container,NavDropdown,Offcanvas} from "react-bootstrap";
+// import NavDropdown from "react-bootstrap";
+// import Offcanvas from "react-bootstrap";
 
 
 
@@ -64,13 +64,13 @@ function Header() {
       >
         <Container>
           <Navbar.Brand href="#home" className="shfkfnwjfn">
-            <img
+            {/* <img
               src={logo_web}
-              // width="190"
+          
               alt=""
               className="brand-logo_refrst  hhh_logog"
-            />
-            <img className="d-block d-lg-none hhh_logog" src={logo_web} alt="" href="#about" />
+            /> */}
+            <img className="d-block  respo hhh_logog" src={logo_web} alt="" href="#about" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
