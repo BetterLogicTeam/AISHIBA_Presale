@@ -3,6 +3,9 @@ import "./Hero.css";
 import eth from "../../assets/eth.svg";
 import usdt from "../../assets/usdt.svg";
 import bnb from "../../assets/bnb.svg";
+import busd from "../../assets/busd.svg";
+<img src="_sma" alt="" />
+import logo from "../../assets/logo.png"
 // import instagram from "../../assets/social-instagram.svg";
 // import twitter from "../../assets/social-twitter.svg";
 import discord from "../../assets/social-discord.svg";
@@ -58,18 +61,18 @@ function Hero() {
       
       <div className="d-flex  mt-5 gap-4">
         {/* <button className="white_paper_btn"> whitepaper</button> */}
-        <button className="heading_btn"> <span class="text">Whitepaper</span>
+        <a className="heading_btn" href="https://twitter.com/aishib_pro?s=21" target="_blank" > <span class="text">Twitter</span>
   <span class="blob"></span>
   <span class="blob"></span>
   <span class="blob"></span>
   <span class="blob"></span>
-</button>
-        <button className="heading_btn"> <span class="text">Audit</span>
+</a>
+        <a href="https://bscscan.com/token/0x0887a05ecda69a6236c43d6751d15a16c3386e39" target="_blank" className="heading_btn"> <span class="text">Smart Contract</span>
   <span class="blob"></span>
   <span class="blob"></span>
   <span class="blob"></span>
   <span class="blob"></span>
-</button>
+</a>
         {/* <button className="white_paper_btn"> audit</button> */}
       </div>
       
@@ -132,9 +135,7 @@ function Hero() {
                     _ngcontent-nxk-c11=""
                     className="mt-3 mb-2 font-20 fw-semibold claim-title"
                   >
-                    {" "}
-                    Claim and Exchange Listings June 19th. Last Chance to Buy
-                    Now!{" "}
+               Claim and Exchange Listings in August . Last Chance to Buy Now! 
                   </p>
                
 
@@ -159,7 +160,7 @@ function Hero() {
                     _ngcontent-nxk-c11=""
                     className="text-center mb-3 font-14 dashTitle fw-semibold"
                   >
-                    1 $AI = $0.0000336
+                  1AIDOGE = 1 token = 0.00000001 $
                   </p>
                   <div
                     _ngcontent-nxk-c11=""
@@ -201,10 +202,35 @@ function Hero() {
                         _ngcontent-nxk-c11=""
                         className="text-center flex-grow-1 px-2 fw-semibold d-flex flex-column"
                       >
+                        <span _ngcontent-nxk-c11=""> USDT </span>
+                        <span _ngcontent-nxk-c11="" className="font-10  text-white subtext">
+                        BEP20
+                        </span>
+                      </div>
+                    </button>
+                    <button
+                      _ngcontent-nxk-c11=""
+                      className={
+                        collection == 1
+                          ? "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn selected"
+                          : "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
+                      }
+                      onClick={() => handleButtonClick(1)}
+                    >
+                      <img
+                        _ngcontent-nxk-c11=""
+                        src={busd}
+                        height={25}
+                        alt=""
+                      />
+                      <div
+                        _ngcontent-nxk-c11=""
+                        className="text-center flex-grow-1 px-2 fw-semibold d-flex flex-column"
+                      >
                         <span _ngcontent-nxk-c11=""> BUSD </span>
-                        {/* <span _ngcontent-nxk-c11="" className="font-10 subtext">
-                          ERC20
-                        </span> */}
+                        <span _ngcontent-nxk-c11="" className="font-10 text-white subtext">
+                        BEP20
+                        </span>
                       </div>
                     </button>
                     <button
@@ -279,7 +305,7 @@ function Hero() {
                             >
                               <label
                                 _ngcontent-nxk-c10=""
-                                className="d-block text-white font-14"
+                                className="d-block text-white ssss"
                               >
                                 {" "}
                                 Amount in{" "}
@@ -364,7 +390,7 @@ function Hero() {
                                 className="form-control text-truncate text-mid-grey ng-untouched ng-pristine ng-valid"
                               />
                               <div _ngcontent-nxk-c10="" className="amountType">
-                                <svg-icon
+                                {/* <svg-icon
                                   _ngcontent-nxk-c10=""
                                   src="./assets/images/svg-icons/ai.svg"
                                 >
@@ -394,7 +420,9 @@ function Hero() {
                                       _ngcontent-nxk-c10=""
                                     />
                                   </svg>
-                                </svg-icon>
+                                </svg-icon> */}
+                                <img src={logo} alt="" style={{width:"30px" ,height:"30px"}} />
+                                
                               </div>
                             </div>
                           </div>
@@ -440,7 +468,7 @@ function Hero() {
                     </button>
                   
                     <div _ngcontent-nxk-c11="" className="font-14 text-center">
-                      LISTING PRICE: $0.0000336
+                    Listing price : 1 token = 0.00000012$
                     </div>
                   </div>
                 </div>

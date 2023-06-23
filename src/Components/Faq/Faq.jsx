@@ -38,60 +38,47 @@ function Faq() {
                 </h2>
                 <Accordion>
                   <Accordion.Item eventKey="0">
-                    <Accordion.Header> What is aishiba ? </Accordion.Header>
+                    <Accordion.Header>What is AISHIBA? </Accordion.Header>
                     <Accordion.Body className="accor_heading">
-                      aishiba is a next-level, AI-powered meme generation
-                      platform designed to revolutionise the way crypto memes
-                      are created and shared.
+                    Aishiba is an advanced AI-powered platform designed to transform the way content is created and shared in the crypto community. With state-of-the-art AI algorithms and user-friendly features, Aishiba enables users to easily generate and customize engaging content. By enhancing social media engagement and facilitating community interactions, Aishiba aims to revolutionize the crypto landscape and provide a seamless platform for users to express their creativity and ideas.
                     </Accordion.Body>
                   </Accordion.Item>
                   <Accordion.Item className="mt-3" eventKey="1">
-                    <Accordion.Header> Why aishiba ? </Accordion.Header>
+                    <Accordion.Header> Where i can buy aishiba? </Accordion.Header>
                     <Accordion.Body className="accor_heading">
-                      {" "}
-                      aishiba is addressing a growing problem on Crypto Twitter
-                      and other social media - the regurgitation of the same
-                      stale memes. We’re injecting life into meme creation
-                      through the power of $AI tokens.{" "}
+                    Aishiba's presale will soon be live, offering the opportunity to purchase tokens using BNB, BUSD, USDT, or ETH. Stay tuned for updates on the presale launch.
                     </Accordion.Body>
                   </Accordion.Item>
 
                   <Accordion.Item className="mt-3" eventKey="2">
                     <Accordion.Header>
-                      {" "}
-                      What is the $AI token utility ?{" "}
+                    When will I get my $AISHIBA tokens ?
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
-                      The $AI token is the key to accessing our bespoke AI
-                      generation tools. $AI token holders will receive special
-                      benefits such as exclusive access to advanced meme
-                      generation software, airdrops, and more.
+                    Once the presale concludes, you will be able to claim your tokens. Stay informed for further instructions and token claiming details.
                     </Accordion.Body>
                   </Accordion.Item>
 
                   <Accordion.Item className="mt-3" eventKey="3">
                     <Accordion.Header>
-                      {" "}
-                      When will I get my $AI tokens ?{" "}
+                    When can I start trading $AISHIBA ?
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
-                      If you’ve purchased $AI tokens in presale, you’ll be able
-                      to claim them on June 19th at 9am UTC.
+                    After the presale ends, our token will be listed on PancakeSwap and other cryptocurrency exchanges for trading. Stay tuned for updates on the listing and trading availability.
                     </Accordion.Body>
                   </Accordion.Item>
 
                   <Accordion.Item className="mt-3" eventKey="4">
                     <Accordion.Header>
-                      When can I start trading $AI ?
+                    When will LP Staking and Token staking platform will launch?
+
                     </Accordion.Header>
                     <Accordion.Body className="accor_heading">
-                      We’ll list the $AI token on a top DEX as soon as possible
-                      after the presale ends in Q3. Our aim is also to secure
-                      top CEX listings.
+                    Upon token distribution to all users, we will launch our staking platform, allowing you to provide liquidity and stake LP tokens. By doing so, you can earn additional tokens as rewards. Stay tuned for more information on the staking platform's launch and the exciting opportunities it will offer.
                     </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item className="mt-3" eventKey="5">
+                  {/* <Accordion.Item className="mt-3" eventKey="5">
                     <Accordion.Header>
                       When will I be able to generate AI memes ?
                     </Accordion.Header>
@@ -102,7 +89,7 @@ function Faq() {
                     </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item className="mt-3" eventKey="5">
+                  <Accordion.Item className="mt-3" eventKey="6">
                     <Accordion.Header>
                       What are the benefits of staking $AI ?
                     </Accordion.Header>
@@ -111,7 +98,10 @@ function Faq() {
                       will allow access to the aishiba platform’s meme generation
                       features.
                     </Accordion.Body>
-                  </Accordion.Item>
+                  </Accordion.Item> */}
+
+
+
                 </Accordion>
               </div>
             </div>

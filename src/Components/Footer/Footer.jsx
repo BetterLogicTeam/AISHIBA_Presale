@@ -3,7 +3,7 @@ import "./Footer.css";
 import logo_web from "../../assets/logo.png";
 import ai_footer from "../../assets/ai_footer.svg";
 // import instagram from "../../assets/social-instagram.svg";
-// import twitter from "../../assets/social-twitter.svg";
+import twitter from "../../assets/tw.svg";
 import discord from "../../assets/social-discord.svg";
 import telegram from "../../assets/social-telegram.svg";
 import tiktok from "../../assets/social-tiktok.svg";
@@ -130,6 +130,20 @@ function Footer() {
                     alt="yt"
                   />
                 </a>
+
+                 <a
+                  _ngcontent-nxk-c20=""
+                  href="https://twitter.com/aishib_pro?s=21" target="_blank"
+                  className="ms-2"
+                >
+                  <img
+                    _ngcontent-nxk-c20=""
+                    height={32}
+                    src={twitter}
+                    alt="twitter"
+                    className="me-3"
+                  />
+                </a>
               </div>
               <div
                 _ngcontent-nxk-c20=""
@@ -148,9 +162,9 @@ function Footer() {
 
           <div
             _ngcontent-nxk-c20=""
-            className="row mt-5 bottom align-items-center"
+            className="row mt-5 justify-content-center bottom align-items-center"
           >
-            <div _ngcontent-nxk-c20="" className="col-lg-4">
+            {/* <div _ngcontent-nxk-c20="" className="col-lg-4">
               <ul
                 _ngcontent-nxk-c20=""
                 type="none"
@@ -190,7 +204,7 @@ function Footer() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
             <div _ngcontent-nxk-c20="" className="col-lg-4 d-none d-lg-block">
               <div
                 _ngcontent-nxk-c20=""

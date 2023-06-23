@@ -14,8 +14,8 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>TOTAL TOKENS</h6>
                 <div className='single_pr'>
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>1,000,000,000</h6>
-                    <p className='mb-0'>1 Billion</p>
+                    <h6 className='mb-0'>200,000,000,000,000</h6>
+                    <p className='mb-0'>2 Billion</p>
                 </div>
                 <div className="tok_pr mt-1">
                 <div className="inner_tkn"></div>
@@ -26,7 +26,7 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>PUBLIC SALE</h6>
 
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>500,000,000</h6>
+                    <h6 className='mb-0'>100,000,000,000,000 tokens</h6>
                     <p className='mb-0'>50%</p>
                 </div>
                 <div className="tok_pr mt-1">
@@ -38,7 +38,7 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>Aishiba POOL</h6>
 
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>100,000,000</h6>
+                    <h6 className='mb-0'> 20,000,000,000,000 tokens</h6>
                     <p className='mb-0'>10%</p>
                 </div>
                 <div className="tok_pr mt-1">
@@ -50,7 +50,7 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>Aishiba VAULT</h6>
 
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>100,000,000</h6>
+                    <h6 className='mb-0'>20,000,000,000,000 tokens</h6>
                     <p className='mb-0'>10%</p>
                 </div>
                 <div className="tok_pr mt-1">
@@ -73,7 +73,7 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>Aishiba FARMS</h6>
 
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>100,000,000</h6>
+                    <h6 className='mb-0'>20,000,000,000,000 tokens</h6>
                     <p className='mb-0'>10%</p>
                 </div>
                 <div className="tok_pr mt-1">
@@ -85,7 +85,7 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>EXCHANGE LISTINGS</h6>
 
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>100,000,000</h6>
+                    <h6 className='mb-0'>20,000,000,000,000 tokens</h6>
                     <p className='mb-0'>10%</p>
                 </div>
                 <div className="tok_pr mt-1">
@@ -97,7 +97,7 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>LIQUIDITY</h6>
 
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>50,000,000</h6>
+                    <h6 className='mb-0'>10,000,000,000,000 tokens</h6>
                     <p className='mb-0'>5%</p>
                 </div>
                 <div className="tok_pr mt-1">
@@ -109,7 +109,7 @@ export default function Tokenomics() {
                 <h6 className='progress_head'>TEAM</h6>
 
                 <div className='d-flex justify-content-between'>
-                    <h6 className='mb-0'>50,000,000</h6>
+                    <h6 className='mb-0'>10,000,000,000,000 tokens</h6>
                     <p className='mb-0'>5%</p>
                 </div>
                 <div className="tok_pr mt-1">

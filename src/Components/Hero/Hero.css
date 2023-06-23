@@ -46,7 +46,12 @@
 
 .haeding_para{
     color: #fff;
+    font-size: 20px !important;
 
+}
+
+.ssss{
+    font-size: 13px !important;
 }
 
 
@@ -142,7 +147,7 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
 
 .dashTitle[_ngcontent-nxk-c11]:before{
     content: "";
-    width: 25%;
+    width: 19%;
     height: 1px;
     background: #C7CED3;
     position: absolute;
@@ -177,7 +182,7 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
 }
 
 .money-btn[_ngcontent-nxk-c11] {
-    width: 25%!important;
+    width: 23%!important;
 }
 
 .btn {
@@ -334,10 +339,11 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
 .heading_btn {
     position: relative;
     font-family: inherit;
+    text-align: center !important;
     text-transform: capitalize !important;
     font-size: 18px;
     border-radius: 40em;
-    width: 8em;
+    width: 10em;
     height: 3em;
     z-index: 1;
     color: white;
