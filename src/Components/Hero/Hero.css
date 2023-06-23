@@ -442,6 +442,7 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
     display: flex;
     /* align-items: center !important; */
     border-radius: 20px !important;
+    text-align: center;
   }
 
 
@@ -450,16 +451,18 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
     position: absolute;
     border-radius: 20px !important;
     height: 100%  !important;
-    width: 30% !important;    background: linear-gradient(to right, #00ff7d, #f8ff00);
+    width: 0% !important;    background: linear-gradient(to right, #00ff7d, #f8ff00);
 
   }
   
   
   .stage_text{
     color: black !important;
-    margin-left: 10rem !important;
+    margin-left: 4.5rem !important;
+    z-index: 1;
     margin-top: 5px !important;
     text-transform: capitalize !important;
+    text-align: center ;
 
   }
   

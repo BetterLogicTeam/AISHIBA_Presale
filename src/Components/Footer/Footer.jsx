@@ -91,7 +91,7 @@ function Footer() {
                 className="d-flex justify-content-center mb-5"
               >
                
-                <a
+                {/* <a
                   _ngcontent-nxk-c20=""
                   href="https://discord.gg/QE5PdhbjUY"
                   target="_blank"
@@ -103,7 +103,10 @@ function Footer() {
                     alt="discord"
                     className="me-3"
                   />
-                </a>
+                </a> */}
+
+
+
                 <a
                   _ngcontent-nxk-c20=""
                   href="https://t.me/AishibaCryptoOfficial"
@@ -117,7 +120,7 @@ function Footer() {
                     className="me-3"
                   />
                 </a>
-                <a
+                {/* <a
                   _ngcontent-nxk-c20=""
                   href="https://www.tiktok.com/@Aishibacrypto"
                   target="_blank"
@@ -129,7 +132,7 @@ function Footer() {
                     src={tiktok}
                     alt="yt"
                   />
-                </a>
+                </a> */}
 
                  <a
                   _ngcontent-nxk-c20=""

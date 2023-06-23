@@ -14,6 +14,7 @@ import Footer from './Components/Footer/Footer'
 import About_us from './Components/About_us/About_us'
 import Tokenomics from './Components/Tokenomics/Tokenomics'
 import Team from './Components/Team/Team'
+import Buy_aishiba from './Components/Buy_aishiba/Buy_aishiba'
 
 function App() {
   const [count, setCount] = useState(2)
@@ -66,6 +67,7 @@ function App() {
       {/* <Ai_token /> */}
       {/* <How_to_Buy /> */}
       <Roadmap milestones={milestones}/>
+      <Buy_aishiba/>
       <Team/>
         {/* <Airdrop /> */}
       <Faq />

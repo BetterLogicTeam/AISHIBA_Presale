@@ -106,28 +106,28 @@ function Hero() {
                       className="rounded-3 p-3 time-card text-center fs-6"
                     >
                       {" "}
-                      06d
+                      30d
                     </div>
                     <div
                       _ngcontent-nxk-c11=""
                       className="rounded-3 p-3 time-card text-center fs-6"
                     >
                       {" "}
-                      02h
+                      00h
                     </div>
                     <div
                       _ngcontent-nxk-c11=""
                       className="rounded-3 p-3 time-card text-center fs-6"
                     >
                       {" "}
-                      14m
+                      00m
                     </div>
                     <div
                       _ngcontent-nxk-c11=""
                       className="rounded-3 p-3 time-card text-center fs-6"
                     >
                       {" "}
-                      08s
+                      00s
                     </div>
                   </div>
                   
@@ -146,10 +146,10 @@ function Hero() {
                 <div className="main_pooo">
                 <div className="progress_bar">
                   <div className="clor"></div>
-                  <p className="stage_text">next stage price  :$0.0031</p>
+                  <p className="stage_text">Next Stage Price :0.000000025$</p>
 
                 </div>
-                <p className="text-center mt-3">usdt raised:$8,983,485.74/$9,909.09</p>
+                <p className="text-center mt-3">USDT raised:0/$100,000</p>
                   
                 </div>
 
@@ -431,7 +431,7 @@ function Hero() {
                           _ngcontent-nxk-c10=""
                           className="err-msg-container text-center"
                         >
-                          <div
+                          {/* <div
                             _ngcontent-nxk-c10=""
                             className="lowBalance fs-7 text-width m-1 ng-star-inserted"
                           >
@@ -447,7 +447,7 @@ function Hero() {
                               : null}{" "}
                             is reserved for gas. The actual amount used will
                             depend on the network.
-                          </div>
+                          </div> */}
                       
                         </div>
                     

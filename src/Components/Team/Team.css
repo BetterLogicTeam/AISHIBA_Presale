@@ -3,18 +3,31 @@
 }
 
 .teamupper{
-    border: 2px solid #71350c!important;
-    border-radius: 10px;
+    /* border: 2px solid #71350c!important; */
+    /* border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #00ff7d, #f8ff00
+  ) 1;
+  border-radius: 1.75rem !important;
+  background-clip: padding-box, border-box;
+  background-origin: border-box; */
+    /* border-radius: 20px !important; */
     padding: 25px 10px;
+
+
+    background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, #00ff7d,  #f8ff00) border-box;
+border-radius: 25px;
+border: 4px solid transparent;
 }
 
 .membersty{
     width: 179px;
     height: 208px;
     /* clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%); */
-    border: 2px solid #71410e!important;
+    /* border: 2px solid #71410e!important; */
     border-radius: 10px;
-    box-shadow: 5px 3px 22px #71410e;
+    box-shadow: 5px 3px 22px #f8ff00;
 }
 
 .team_title{
