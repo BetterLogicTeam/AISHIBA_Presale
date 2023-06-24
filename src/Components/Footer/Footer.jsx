@@ -83,7 +83,7 @@ function Footer() {
                   alt=""
                   width={90}
                   height={90}
-                  className="d-lg-none d-block smallView"
+                  className=" smallView"
                 />
               </div>
               <div
@@ -148,10 +148,10 @@ function Footer() {
                   />
                 </a>
               </div>
-              <div
+              {/* <div
                 _ngcontent-nxk-c20=""
                 className="divider d-block d-lg-none"
-              />
+              /> */}
             </div>
             <div _ngcontent-nxk-c20="" className="divider d-none d-lg-block" />
           </div>
@@ -229,7 +229,7 @@ function Footer() {
           </div>
           <div
             _ngcontent-nxk-c20=""
-            className="col-lg-12 d-block d-lg-none my-3 text-center"
+            className="col-lg-12 my-3 smallView_txt text-center"
           >
             <div _ngcontent-nxk-c20="" className="font-14 text-white">
               <span

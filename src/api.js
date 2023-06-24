@@ -1,26 +1,21 @@
 import Web3 from "web3";
 let isItConnected = false;
-const networks = {
-  bsc: {
-   
-    chainId: `0x${Number(97).toString(16)}`, // archie testnet
-    chainName: "BNB Smart Chain Testnet",
-    nativeCurrency: {
-      name: "BNB Smart Chain Testnet",
-      symbol: "tBNB",
-      decimals: 18,
-    },
-    rpcUrls: ["https://data-seed-prebsc-1-s3.binance.org:8545/"],
-    blockExplorerUrls: ["https://testnet.bscscan.com/"],
-  },
-};
-const changeNetwork = async ({ networkName }) => {
+// let id = 97
+// let setId = localStorage.getItem("switch_net")
+// console.log("setId", setId);
+// if (setId?.toString() == "bsc") {
+//   id = 97
+// } else {
+//   id = 5
+// }
+
+const changeNetwork = async ({ id }) => {
   try {
     if (!window.ethereum) throw new Error("No crypto wallet found");
     const web3 = window.web3;
     await window.ethereum.request({
       method: 'wallet_switchEthereumChain',
-      params: [{ chainId: web3.utils.toHex(97) }]
+      params: [{ chainId: web3.utils.toHex(id) }]
     });
     window.location.reload();
 
@@ -28,8 +23,8 @@ const changeNetwork = async ({ networkName }) => {
     console.log(err, "not found");
   }
 };
-const handleNetworkSwitch = async (networkName) => {
-  await changeNetwork({ networkName });
+const handleNetworkSwitch = async (id) => {
+  await changeNetwork({ id });
 };
 let accounts;
 const getAccounts = async () => {
@@ -49,24 +44,31 @@ export const disconnectWallet = async () => {
   });
   console.log("disconnect");
 };
-export const loadWeb3 = async () => {
+export const loadWeb3 = async (id) => {
   try {
     if (window.ethereum) {
       window.web3 = new Web3(window.ethereum);
       await window.ethereum.enable();
       await window.web3.eth.getChainId((err, netId) => {
-        // console.log("networkId==>", netId);
-        switch (netId.toString()) {
-          case "97":
-            isItConnected = true;
-            break;
-          default:
-            handleNetworkSwitch("bsc");
-            isItConnected = false;
+        console.log("networkId==>", netId);
+        if (netId.toString() == id?.toString()) {
+          isItConnected = true;
+        } else {
+          handleNetworkSwitch(id);
+          isItConnected = false;
         }
+        // switch (netId.toString()) {
+        //   case "97":
+        //     isItConnected = true;
+        //     break;
+        //   default:
+        //     handleNetworkSwitch("bsc");
+        //     isItConnected = false;
+        // }
       });
       if (isItConnected == true) {
         let accounts = await getAccounts();
+        console.log("accounts", accounts);
         return accounts[0];
       } else {
         let res = "Wrong Network";

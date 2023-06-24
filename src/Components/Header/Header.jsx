@@ -43,7 +43,7 @@ function Header() {
   const handleResize = () => {
     if (window.innerWidth < 1100) {
       setfirst(false);
-      console.log("Check");
+ 
     } else {
       setfirst(true);
     }

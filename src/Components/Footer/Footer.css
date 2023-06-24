@@ -39,3 +39,13 @@ a[_ngcontent-nxk-c20] {
         height: 96px;
     }
 }
+
+@media (min-width: 950px) and (max-width: 90000px) {
+    .smallView{
+        display: none !important;
+    }
+
+    .smallView_txt{
+        display: none !important;
+    }
+}

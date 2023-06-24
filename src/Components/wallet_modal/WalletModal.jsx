@@ -2,12 +2,14 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 import { useDispatch } from "react-redux";
-import { connectWalletAction } from "../../store/actions/login";
+// import { connectWalletAction } from "../../store/actions/login";
 import metamask from '../../assets/metamask.svg'
 import wallet_connect from '../../assets/wallet_connect.svg'
 import './Wallet_Style.css'  
+import { getUserProfile } from "../../features/userSlice";
 function WalletModal(props) {
   const dispatch = useDispatch();
+  console.log("props",props.ID);
 
   return (
     <Modal
@@ -29,7 +31,7 @@ function WalletModal(props) {
             _ngcontent-vsv-c60=""
             role="button"
             class="cursor-pointer walletBtn ng-star-inserted"
-            onClick={()=>(dispatch(connectWalletAction(2)),props.onHide())}
+            onClick={()=>(dispatch(getUserProfile({id:2,chain:props.ID})),props.onHide())}
           >
             <img
               _ngcontent-vsv-c60=""
@@ -49,7 +51,7 @@ function WalletModal(props) {
             role="button"
             class="cursor-pointer walletBtn"
             style={{cursor:"pointer"}}
-            onClick={()=>(dispatch(connectWalletAction(1)),props.onHide())}
+            onClick={()=>(dispatch(getUserProfile({id:1,chain:props.IsId})),props.onHide())}
           >
             <img
               _ngcontent-vsv-c60=""

@@ -1,4 +1,5 @@
 
+import { Toaster } from 'react-hot-toast';
 import './App.css';
 import About_us from './Components/About_us/About_us';
 import Buy_aishiba from './Components/Buy_aishiba/Buy_aishiba';
@@ -50,8 +51,15 @@ function App() {
       // description4: 'New CEX & DEX Listings',
     },
   ];
+
+  let change=localStorage.getItem("switch_net")
+  if(change==null){
+    localStorage.setItem("switch_net","bsc")
+  }
+
   return (
     <div className="App">
+      <Toaster  />
       <Header />
       <Hero />
       <About_us />
