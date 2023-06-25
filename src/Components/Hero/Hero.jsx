@@ -50,17 +50,14 @@ function Hero() {
 
   const [IsId, setIsId] = useState(97);
 
-  // let { provider, acc, providerType, web3,changeMetamask } = useSelector(
-  //   (state) => state.connectWallet
-  // );
+ 
   const webSupply = new Web3("https://bsc-testnet.public.blastapi.io");
   const { account, web3, providerType, provider } = useSelector(
     (state) => state.user.data
   );
   const lorem = useSelector((state) => state.lorem);
 
-  console.log("User", lorem);
-  // let getChainID = localStorage.getItem("switch_net");
+
 
   useEffect(() => {
     dispatch(getLoarem());
@@ -68,7 +65,7 @@ function Hero() {
     const getChainId1 = async () => {
       window.web3 = new Web3(window.ethereum);
       await window.web3.eth.getChainId((err, netId) => {
-        console.log("Chain_Id", netId);
+        // console.log("Chain_Id", netId);
         setgetChainID(netId);
       });
     };
@@ -92,7 +89,6 @@ function Hero() {
     console.log("Value", Value);
     let ContractOf = new webSupply.eth.Contract(Presale_Abi, Presale_Contract);
 
-    // setTotalToken(parseFloat(e.target.value / commonStats.salePrice));
     if (Value === "") {
       setError("Please enter valid amount.");
       setTotalToken(0);
@@ -104,26 +100,26 @@ function Hero() {
           .getTokenvalueperUSDT(Value)
           .call();
         USDT_Token = webSupply.utils.fromWei(USDT_Token.toString());
-        console.log("USDT_Balace", USDT_Token);
+        // console.log("USDT_Balace", USDT_Token);
         setTotalToken(USDT_Token);
       } else if (collection === 3) {
         let BUSD_Token = await ContractOf.methods
           .getTokenvalueperBUSD(Value)
           .call();
         BUSD_Token = webSupply.utils.fromWei(BUSD_Token.toString());
-        console.log("USDT_Balace", BUSD_Token);
+        // console.log("USDT_Balace", BUSD_Token);
         setTokenName("BUSD");
       } else if (collection === 2) {
         let BNB_Token = await ContractOf.methods
           .getTokenvalueperBNB(Value)
           .call();
         BNB_Token = webSupply.utils.fromWei(BNB_Token.toString());
-        console.log("bnb balance", BNB_Token);
+        // console.log("bnb balance", BNB_Token);
         setTotalToken(BNB_Token);
       } else {
         let Eth_Token = amount * 1900000;
-        // Eth_Token=BigInt(Eth_Token)
-        console.log("Eth_Token", Eth_Token);
+      
+        // console.log("Eth_Token", Eth_Token);
 
         setTotalToken(Eth_Token);
       }
