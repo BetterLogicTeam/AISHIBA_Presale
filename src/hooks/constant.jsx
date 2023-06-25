@@ -1,7 +1,7 @@
 
   
   //here we need the timespame
-  export const ENDTIME = 1688261825000; //use webiste - https://www.epochconverter.com/
+  export const ENDTIME = 1690302001000; //use webiste - https://www.epochconverter.com/
   export const GOAL = 2500000;
   export const totalRaised = 550000;
   

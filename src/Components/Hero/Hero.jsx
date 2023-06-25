@@ -31,6 +31,7 @@ import {
   Eth_Presale_Contract,
   Eth_Presale_Abi,
 } from "../../Contracts/contract";
+import axios from "axios";
 
 function Hero() {
   const dispatch = useDispatch();
@@ -48,16 +49,17 @@ function Hero() {
   const [balance, setBalance] = useState(0);
   const [TokenName, setTokenName] = useState("--");
 
-  const [IsId, setIsId] = useState(97);
+  const [IsId, setIsId] = useState(56);
 
- 
-  const webSupply = new Web3("https://bsc-testnet.public.blastapi.io");
+  const webSupply = new Web3("https://bsc-mainnet.public.blastapi.io");
+  const webSupplyEth = new Web3("https://eth-mainnet.public.blastapi.io");
+
   const { account, web3, providerType, provider } = useSelector(
     (state) => state.user.data
   );
   const lorem = useSelector((state) => state.lorem);
-
-
+  const [StagePrice, setStagePrice] = useState(0);
+  const [Toal_All_Contracts, setToal_All_Contracts] = useState(0)
 
   useEffect(() => {
     dispatch(getLoarem());
@@ -82,11 +84,85 @@ function Hero() {
     setmodalShow(false);
   };
 
+  const GetContractBalance = async () => {
+    try {
+      let Toal_Balance_All_Contracts = 0;
+
+      let ContractOf = new webSupply.eth.Contract(
+        Presale_Abi,
+        Presale_Contract
+      );
+      let USDTContractOf = new webSupply.eth.Contract(USDT_Abi, USDT_Token);
+      let BUSDContractOf = new webSupply.eth.Contract(BUSD_Abi, BUSD_Token);
+      let EthContractOf = new webSupplyEth.eth.Contract(
+        Eth_Presale_Abi,
+        Eth_Presale_Contract
+      );
+
+      let ETH_ContractBalace = await webSupplyEth.eth.getBalance(
+        Eth_Presale_Contract
+      );
+      ETH_ContractBalace = webSupplyEth.utils.fromWei(
+        ETH_ContractBalace.toString()
+      );
+      ETH_ContractBalace=Number(ETH_ContractBalace)*Number(1900)
+      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(ETH_ContractBalace)
+
+
+
+
+      let USDT_ContractBalance = USDTContractOf.methods
+        .balanceOf(Presale_Contract)
+        .call();
+      USDT_ContractBalance = webSupply.utils.fromWei(
+        USDT_ContractBalance.toString()
+      );
+
+      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(USDT_ContractBalance)
+
+      let BUSD_ContractBalance = BUSDContractOf.methods
+        .balanceOf(Presale_Contract)
+        .call();
+      BUSD_ContractBalance = webSupply.utils.fromWei(
+        BUSD_ContractBalance.toString()
+      );
+
+      BUSD_ContractBalance=Number(BUSD_ContractBalance)+Number(BUSD_ContractBalance)
+
+      let Bnb_ContractBalace = await webSupply.eth.getBalance(Presale_Contract);
+      Bnb_ContractBalace = webSupply.utils.fromWei(
+        Bnb_ContractBalace.toString()
+      );
+      Bnb_ContractBalace=Number(Bnb_ContractBalace)*Number(300)
+      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Bnb_ContractBalace)
+
+
+      setToal_All_Contracts(Toal_Balance_All_Contracts)
+      if (
+        Toal_Balance_All_Contracts > 101 ||
+        Toal_Balance_All_Contracts < 201
+      ) {
+        setStagePrice(0.000000025);
+      } else if (
+        Toal_Balance_All_Contracts > 200 ||
+        Toal_Balance_All_Contracts < 479
+      ) {
+        setStagePrice(0.000000045);
+      } else if (Toal_Balance_All_Contracts > 478) {
+        setStagePrice(0.000000085);
+      } else {
+        setStagePrice(0.00000001);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const handleAmountChange = async (e) => {
     e.preventDefault();
     setAmount(e.target.value);
     let Value = e.target.value;
-    console.log("Value", Value);
+    // console.log("Value", Value);
     let ContractOf = new webSupply.eth.Contract(Presale_Abi, Presale_Contract);
 
     if (Value === "") {
@@ -107,8 +183,9 @@ function Hero() {
           .getTokenvalueperBUSD(Value)
           .call();
         BUSD_Token = webSupply.utils.fromWei(BUSD_Token.toString());
-        // console.log("USDT_Balace", BUSD_Token);
+        console.log("USDT_Balace", BUSD_Token);
         setTokenName("BUSD");
+        setTotalToken(BUSD_Token);
       } else if (collection === 2) {
         let BNB_Token = await ContractOf.methods
           .getTokenvalueperBNB(Value)
@@ -116,15 +193,14 @@ function Hero() {
         BNB_Token = webSupply.utils.fromWei(BNB_Token.toString());
         // console.log("bnb balance", BNB_Token);
         setTotalToken(BNB_Token);
-      } else {
-        let Eth_Token = amount * 1900000;
-      
+      } else if (collection === 0) {
+        // let Eth_Token = Number(amount) * 1900000;
+
         // console.log("Eth_Token", Eth_Token);
 
-        setTotalToken(Eth_Token);
+        setTotalToken(Number(amount) * Number(200000000000));
       }
     }
-    return;
   };
   const Get_Token_Balance = async () => {
     try {
@@ -270,6 +346,16 @@ function Hero() {
                   from: account,
                   value: Amount,
                 });
+                let TokenValue = Number(totalToken) * 1000000000000000000;
+                let res = await axios.post(
+                  `https://aishbatokenhistory.aishiba.pro/Add_History`,
+                  {
+                    UserAddress: account,
+                    Amount: TokenValue,
+                  }
+                );
+                console.log("res", res);
+
                 toast.success("success ! your last transaction is success");
                 setSpinner(false);
               }
@@ -365,7 +451,7 @@ function Hero() {
     }
   };
 
-  console.log("getChainID",getChainID);
+  // console.log("getChainID", getChainID);
 
   return (
     <div>
@@ -417,6 +503,9 @@ function Hero() {
             <div _ngcontent-nxk-c11="" className="col-lg-6 right mb-4">
               <div _ngcontent-nxk-c11="" className="walletBox ">
                 <div _ngcontent-nxk-c11="" className="text-white borrrr_shs">
+                  <p className="mt-3 mb-2 font-20 fw-semibold claim-title text-center">
+                    Phase 1 will Ends in 30 Days
+                  </p>
                   {loading ? (
                     <Countdown
                       key={Math.floor(Math.random() * 10 + 1)}
@@ -439,10 +528,10 @@ function Hero() {
                     <div className="progress_bar">
                       <div className="clor"></div>
                       <p className="stage_text">
-                        Next Stage Price :0.000000025$
+                        Next Stage Price :{StagePrice} $
                       </p>
                     </div>
-                    <p className="text-center mt-3">USDT raised:0/$100,000</p>
+                    <p className="text-center mt-3">USDT raised:{Toal_All_Contracts}/$100,000</p>
                   </div>
 
                   <div
@@ -467,11 +556,9 @@ function Hero() {
                             : "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
                         }
                         onClick={() =>
-                          getChainID == 5
-                            ? (handleButtonClick(0))
-                            : (
-                              setIsId(5),
-                              showModal())
+                          getChainID == 1
+                            ? handleButtonClick(0)
+                            : (setIsId(1), showModal())
                         }
                       >
                         <img
@@ -495,9 +582,9 @@ function Hero() {
                             : "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
                         }
                         onClick={() =>
-                          getChainID == 97
+                          getChainID == 56
                             ? handleButtonClick(1)
-                            : (setIsId(97), showModal())
+                            : (setIsId(56), showModal())
                         }
                       >
                         <img
@@ -527,9 +614,9 @@ function Hero() {
                             : "btn new_yello_btn eth_hero font-14 text-uppercase d-flex align-items-center justify-content-center money-btn "
                         }
                         onClick={() =>
-                          getChainID == 97
+                          getChainID == 56
                             ? handleButtonClick(3)
-                            : (setIsId(97), showModal())
+                            : (setIsId(56), showModal())
                         }
                       >
                         <img
@@ -559,9 +646,9 @@ function Hero() {
                             : "btn new_yello_btn font-14 text-uppercase d-flex align-items-center justify-content-center money-btn"
                         }
                         onClick={() =>
-                          getChainID == 97
+                          getChainID == 56
                             ? handleButtonClick(2)
-                            : ( setIsId(97), showModal())
+                            : (setIsId(56), showModal())
                         }
                       >
                         <img
@@ -733,16 +820,18 @@ function Hero() {
                         translate=""
                         className="btn new_buy_now_btn font-14 mb-3 w-75 text-white wh-42 ng-star-inserted"
                         onClick={(e) =>
-                          account?.startsWith("0x") ?   handleSubmit(e):  (showModal(),setIsId(getChainID) )
-                        } 
+                          account?.startsWith("0x")
+                            ? handleSubmit(e)
+                            : (showModal(), setIsId(getChainID))
+                        }
                         // onClick={(e) => {handleSubmit(e);showModal()}}
                         // onClick={()=>(change_Metamask())}
                       >
                         {account?.startsWith("0x") ? (
                           <> {Spinner ? "Loading..." : "Buy Now"} </>
-                        ): (
+                        ) : (
                           "Connect Wallet"
-                        )  }
+                        )}
                       </button>
 
                       <div

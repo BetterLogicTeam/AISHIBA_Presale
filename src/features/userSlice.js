@@ -53,9 +53,9 @@ export const getUserProfile = createAsyncThunk("user/getUserProfile", async (cho
             }
         } else if (chose.id === 2) {
             console.log("chosechainId",chose.chain);
-            if (chose.chain == 97) {
+            if (chose.chain == 56) {
 
-                let acc = await loadWeb3(97);
+                let acc = await loadWeb3(56);
                 console.log("Acc", acc);
                 const web3 = window.web3;
                 let accounts = await web3.eth.getAccounts();
@@ -68,7 +68,7 @@ export const getUserProfile = createAsyncThunk("user/getUserProfile", async (cho
                     networkChange: chose.net
                 }
             } else {
-                let acc = await loadWeb3(5);
+                let acc = await loadWeb3(1);
                 console.log("Acc", acc);
                 const web3 = window.web3;
                 let accounts = await web3.eth.getAccounts();

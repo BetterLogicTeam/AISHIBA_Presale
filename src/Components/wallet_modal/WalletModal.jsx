@@ -9,7 +9,7 @@ import './Wallet_Style.css'
 import { getUserProfile } from "../../features/userSlice";
 function WalletModal(props) {
   const dispatch = useDispatch();
-  console.log("props",props.ID);
+  // console.log("props",props.ID);
 
   return (
     <Modal

@@ -251,7 +251,7 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
     }
 
     .btn[_ngcontent-nxk-c11]{
-        padding: 10px 70px;
+        padding: 10px 30px;
     }
 }
 
@@ -272,13 +272,25 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
     }
 
     .btn[_ngcontent-nxk-c11]{
-        padding: 10px 70px;
+        padding: 10px 30px;
     }
 }
 
 @media screen and (max-width: 768px){
 .banner[_ngcontent-yog-c11] {
     margin-top: 48px;
+}
+.dashTitle[_ngcontent-nxk-c11]:before {
+    content: "";
+    width: 9% !important;
+    height: 1px;
+    background: #C7CED3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.dashTitle[_ngcontent-nxk-c11] {
+    margin-top: -2rem !important;
 }
 
 .header-logo[_ngcontent-yog-c11] {
