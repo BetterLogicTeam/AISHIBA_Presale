@@ -34,6 +34,12 @@
       "react-app/jest"
     ]
   },
+  "standard": {
+    
+    "globals": [
+      "BigInt"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -58,4 +64,5 @@
     "stream-http": "^3.2.0",
     "url": "^0.11.1"
   }
+  
 }

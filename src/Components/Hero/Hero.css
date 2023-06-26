@@ -445,25 +445,43 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
    
 
 }
+.bar_top{
+    border: 1px solid #fff;
+    border-radius: 5px !important;
+    height: 26px !important;
+}
 
 
   .progress_bar{
-    background-color: white !important;
+    background-color: green !important;
+   
+  
+    height: 25px !important;
+
+    border-radius: 5px !important;
+
+    z-index: -1 !important;
     position: relative;
-    height: 26px !important;
-    display: flex;
-    /* align-items: center !important; */
-    border-radius: 20px !important;
-    text-align: center;
+    /* margin-left: 0.1rem; */
   }
 
 
   .clor{
-    background-color:  rgb(88, 88, 26);
+    background-color:  rgb(88, 88, 26) !important;
+    z-index: 100;
     position: absolute;
-    border-radius: 20px !important;
-    height: 100%  !important;
-    width: 0% !important;    background: linear-gradient(to right, #00ff7d, #f8ff00);
+
+    
+
+  }
+  .stage_text1{
+    color: #fff !important;
+    margin-left: 4.5rem !important;
+    z-index: 1;
+    /* margin-top: 5px !important; */
+    text-transform: capitalize !important;
+    text-align: center ;
+    position: absolute;
 
   }
   
@@ -557,4 +575,9 @@ margin-top: 2rem !important;
 
 
 
+
+    .selected{
+        /* background-color: #0061ff !important; */
+        border: 2px solid #0DC5F5 !important;
+    }
  

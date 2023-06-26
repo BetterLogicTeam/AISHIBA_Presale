@@ -59,7 +59,7 @@ function Hero() {
   );
   const lorem = useSelector((state) => state.lorem);
   const [StagePrice, setStagePrice] = useState(0);
-  const [Toal_All_Contracts, setToal_All_Contracts] = useState(0)
+  const [Toal_All_Contracts, setToal_All_Contracts] = useState(0);
 
   useEffect(() => {
     dispatch(getLoarem());
@@ -85,6 +85,7 @@ function Hero() {
     setmodalShow(false);
   };
 
+  let Stage_data = 10000000000;
   const GetContractBalance = async () => {
     try {
       let Toal_Balance_All_Contracts = 0;
@@ -99,59 +100,64 @@ function Hero() {
       );
       let USDTContractOf = new webSupply.eth.Contract(USDT_Abi, USDT_Token);
       let BUSDContractOf = new webSupply.eth.Contract(BUSD_Abi, BUSD_Token);
-     
 
       let Presale_Eth_Balace = await web3.eth.getBalance(Eth_Presale_Contract);
-      Presale_Eth_Balace = webSupply.utils.fromWei(Presale_Eth_Balace.toString());
+      Presale_Eth_Balace = webSupply.utils.fromWei(
+        Presale_Eth_Balace.toString()
+      );
       console.log("Presale_Eth_Balace", Presale_Eth_Balace);
-      Presale_Eth_Balace=Number(Presale_Eth_Balace)*Number(1900)
-      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_Eth_Balace)
-
-
-
-
+      Presale_Eth_Balace = Number(Presale_Eth_Balace) * Number(1900);
+      Toal_Balance_All_Contracts =
+        Number(Toal_Balance_All_Contracts) + Number(Presale_Eth_Balace);
 
       let Presale_USDT_Balace = await USDTContractOf.methods
         .balanceOf(Presale_Contract)
         .call();
-        Presale_USDT_Balace = webSupply.utils.fromWei(Presale_USDT_Balace.toString());
+      Presale_USDT_Balace = webSupply.utils.fromWei(
+        Presale_USDT_Balace.toString()
+      );
       console.log("Presale_USDT_Balace", Presale_USDT_Balace);
 
-      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_USDT_Balace)
+      Toal_Balance_All_Contracts =
+        Number(Toal_Balance_All_Contracts) + Number(Presale_USDT_Balace);
 
-      
-        let Presale_BUSD_Balance = await BUSDContractOf.methods
-          .balanceOf(Presale_Contract)
-          .call();
-          Presale_BUSD_Balance = webSupply.utils.fromWei(Presale_BUSD_Balance.toString());
-          console.log("Presale_BUSD_Balance", Presale_BUSD_Balance);
+      let Presale_BUSD_Balance = await BUSDContractOf.methods
+        .balanceOf(Presale_Contract)
+        .call();
+      Presale_BUSD_Balance = webSupply.utils.fromWei(
+        Presale_BUSD_Balance.toString()
+      );
+      console.log("Presale_BUSD_Balance", Presale_BUSD_Balance);
 
-      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_BUSD_Balance)
+      Toal_Balance_All_Contracts =
+        Number(Toal_Balance_All_Contracts) + Number(Presale_BUSD_Balance);
 
       let Presale_Bnb_Balace = await web3.eth.getBalance(Presale_Contract);
-      Presale_Bnb_Balace = webSupply.utils.fromWei(Presale_Bnb_Balace.toString());
-        console.log("Presale_Bnb_Balace", Presale_Bnb_Balace);
-      Presale_Bnb_Balace=Number(Presale_Bnb_Balace)*Number(300)
-      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_Bnb_Balace)
+      Presale_Bnb_Balace = webSupply.utils.fromWei(
+        Presale_Bnb_Balace.toString()
+      );
+      console.log("Presale_Bnb_Balace", Presale_Bnb_Balace);
+      Presale_Bnb_Balace = Number(Presale_Bnb_Balace) * Number(300);
+      Toal_Balance_All_Contracts =
+        Number(Toal_Balance_All_Contracts) + Number(Presale_Bnb_Balace);
 
-console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
-      setToal_All_Contracts(Toal_Balance_All_Contracts)
-      
+      console.log(Toal_Balance_All_Contracts, "Toal_Balance_All_Contracts");
+      setToal_All_Contracts(Toal_Balance_All_Contracts);
+
       if (
         Number(Toal_Balance_All_Contracts) > Number(101) &&
         Number(Toal_Balance_All_Contracts) < Number(201)
       ) {
-      
-        setStagePrice(0.000000025);
+        setStagePrice(webSupply.utils.toWei("0.000000025"));
       } else if (
         Number(Toal_Balance_All_Contracts) > Number(200) &&
         Number(Toal_Balance_All_Contracts) < Number(479)
       ) {
-        setStagePrice(0.000000045);
+        setStagePrice(webSupply.utils.toWei("0.000000045"));
       } else if (Number(Toal_Balance_All_Contracts) > Number(478)) {
-        setStagePrice(0.000000085);
+        setStagePrice(webSupply.utils.toWei("0.000000085"));
       } else {
-        setStagePrice(0.00000001);
+        setStagePrice(webSupply.utils.toWei("0.00000001"));
       }
     } catch (error) {
       console.log(error);
@@ -443,7 +449,8 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
               _ngcontent-nxk-c11=""
               className="mt-3 mb-2 font-20 fw-semibold claim-title"
             >
-              Claim and Exchange Listings After All Phase . Last Chance to Buy Now!
+              Claim and Exchange Listings After All Phase . Last Chance to Buy
+              Now!
             </p>
           </div>
         </>
@@ -458,12 +465,21 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
       <WalletModal show={modalShow} onHide={closeModal} ID={IsId} />
       <div _ngcontent-nxk-c11="" className="background new_bg" id="home">
         <div className="container">
-          <div className="row justify-content-center " style={{ fontFamily: "'Itim', cursive" }}>
+          <div
+            className="row justify-content-center "
+            style={{ fontFamily: "'Itim', cursive" }}
+          >
             <div className="col-md-6  text-center">
               <div className="new_b_c">
-                <h1>Empowering a decentralized world through a unified platform.</h1>
+                <h1>
+                  Empowering a decentralized world through a unified platform.
+                </h1>
                 <p className="haeding_para">
-                Aishiba's vision is to establish a seamless network that unites different blockchain platforms, fostering a strong cross-chain ecosystem for decentralized finance (DeFi), while ensuring secure, transparent, and unrestricted DeFi experiences through essential infrastructure and support.
+                  Aishiba's vision is to establish a seamless network that
+                  unites different blockchain platforms, fostering a strong
+                  cross-chain ecosystem for decentralized finance (DeFi), while
+                  ensuring secure, transparent, and unrestricted DeFi
+                  experiences through essential infrastructure and support.
                 </p>
 
                 <div className="d-flex  mt-5 gap-4">
@@ -501,7 +517,7 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
                   <p className="mt-3 mb-2 font-20 fw-semibold claim-title text-center">
                     Phase 1 will Ends in 30 Days
                   </p>
-                  {loading ? (
+                  {/* {loading ? (
                     <Countdown
                       key={Math.floor(Math.random() * 10 + 1)}
                       date={ENDTIME}
@@ -513,21 +529,44 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
                       date={data?.endDate}
                       renderer={countdownrender}
                     />
-                  )}
+                  )} */}
                   <Countdown
                     key={Math.floor(Math.random() * 10 + 1)}
                     date={ENDTIME}
                     renderer={countdownrender}
                   />
                   <div className="main_pooo">
-                    <div className="progress_bar">
-                      <div className="clor"></div>
-                      <p className="stage_text">
-                        Next Stage Price : 
-                        {StagePrice} $
+                    <div className="bar_top ">
+                      <p className="stage_text1">
+                        Next Stage Price :
+                        {webSupply.utils.fromWei(StagePrice.toString())} $
                       </p>
+                      <div className="progress_bar"
+                      style={{width:`${(Toal_All_Contracts / 100000) * 100}%`}}
+                      >
+
+                       
+                      </div>
                     </div>
-                    <p className="text-center mt-3">USDT raised:${Toal_All_Contracts}/$100,000</p>
+                    {/* <div className="progress_bar">
+                      <div
+                        className="clor"
+                        style={{ backgroundColor: "#fff" }}
+                      ></div>
+                      <p className="stage_text">
+                        Next Stage Price :
+                        {webSupply.utils.fromWei(StagePrice.toString())} $
+                      </p>
+                      <div
+                        className=""
+                        style={{
+                          width: "1rem",
+                        }}
+                      ></div>
+                    </div> */}
+                    <p className="text-center mt-3">
+                      USDT raised:${Toal_All_Contracts}/$100,000
+                    </p>
                   </div>
 
                   <div
@@ -556,6 +595,10 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
                             ? handleButtonClick(0)
                             : (setIsId(1), showModal())
                         }
+                        style={{
+                          backgroundColor: collection == 0 ? "black" : "",
+                          border: collection == 0 ? "1px solid #00ff7d" : "",
+                        }}
                       >
                         <img
                           _ngcontent-nxk-c11=""
@@ -582,6 +625,10 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
                             ? handleButtonClick(1)
                             : (setIsId(56), showModal())
                         }
+                        style={{
+                          backgroundColor: collection == 1 ? "red" : "",
+                          border: collection == 1 ? "1px solid #00ff7d" : "",
+                        }}
                       >
                         <img
                           _ngcontent-nxk-c11=""
@@ -715,8 +762,9 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
                                 <div
                                   _ngcontent-nxk-c10=""
                                   className="fw-bold text-white cursor-pointer font-14 ng-star-inserted"
+                                  onClick={()=>setAmount(Number(balance) - Number(0.002))}
                                 >
-                                  Max{" "}
+                                  Max
                                 </div>
                               </div>
                               <div
@@ -733,6 +781,7 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
                                     apptwodigitdecimalnumber=""
                                     onChange={(e) => handleAmountChange(e)}
                                     placeholder={0}
+                                    value={amount}
                                     className="form-control text-truncate color-secondary ng-untouched ng-pristine ng-valid"
                                   />
                                   <div
@@ -759,7 +808,8 @@ console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
                               >
                                 <label
                                   _ngcontent-nxk-c10=""
-                                  className="d-block text-white ssss"
+                                  className="d-block text-white ssss "
+                                  style={{marginTop:"0.2rem"}}
                                 >
                                   {" "}
                                   Amount in{" "}
