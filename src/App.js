@@ -65,7 +65,7 @@ function App() {
       <About_us />
       <Tokenomics />
       <Roadmap milestones={milestones} />
-      <Buy_aishiba />
+      <Buy_aishiba /><br></br><br></br>
       <Team />
       <Faq />
       <Footer />

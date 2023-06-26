@@ -206,7 +206,7 @@ li[_ngcontent-nxk-c15]:before {
 .inner-content[_ngcontent-nxk-c15]
   ul[_ngcontent-nxk-c15]
   li[_ngcontent-nxk-c15] {
-  font-family: Inder;
+    font-family: 'Itim', cursive;
   font-weight: 400;
   font-size: 15px;
   color: #4acfff;
@@ -240,7 +240,7 @@ li[_ngcontent-nxk-c15]:after {
   width: 100%;
   padding: 0 20px;
   overflow: hidden;
-  font-family: Inder;
+  font-family: 'Itim', cursive;
 }
 
 .slider-container {

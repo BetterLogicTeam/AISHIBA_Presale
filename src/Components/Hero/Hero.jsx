@@ -51,7 +51,7 @@ function Hero() {
 
   const [IsId, setIsId] = useState(56);
 
-  const webSupply = new Web3("https://bsc-mainnet.public.blastapi.io");
+  const webSupply = new Web3("https://bsc.publicnode.com");
   const webSupplyEth = new Web3("https://eth-mainnet.public.blastapi.io");
 
   const { account, web3, providerType, provider } = useSelector(
@@ -64,6 +64,7 @@ function Hero() {
   useEffect(() => {
     dispatch(getLoarem());
     Get_Token_Balance();
+    GetContractBalance();
     const getChainId1 = async () => {
       window.web3 = new Web3(window.ethereum);
       await window.web3.eth.getChainId((err, netId) => {
@@ -92,63 +93,62 @@ function Hero() {
         Presale_Abi,
         Presale_Contract
       );
-      let USDTContractOf = new webSupply.eth.Contract(USDT_Abi, USDT_Token);
-      let BUSDContractOf = new webSupply.eth.Contract(BUSD_Abi, BUSD_Token);
       let EthContractOf = new webSupplyEth.eth.Contract(
         Eth_Presale_Abi,
         Eth_Presale_Contract
       );
+      let USDTContractOf = new webSupply.eth.Contract(USDT_Abi, USDT_Token);
+      let BUSDContractOf = new webSupply.eth.Contract(BUSD_Abi, BUSD_Token);
+     
 
-      let ETH_ContractBalace = await webSupplyEth.eth.getBalance(
-        Eth_Presale_Contract
-      );
-      ETH_ContractBalace = webSupplyEth.utils.fromWei(
-        ETH_ContractBalace.toString()
-      );
-      ETH_ContractBalace=Number(ETH_ContractBalace)*Number(1900)
-      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(ETH_ContractBalace)
-
-
+      let Presale_Eth_Balace = await web3.eth.getBalance(Eth_Presale_Contract);
+      Presale_Eth_Balace = webSupply.utils.fromWei(Presale_Eth_Balace.toString());
+      console.log("Presale_Eth_Balace", Presale_Eth_Balace);
+      Presale_Eth_Balace=Number(Presale_Eth_Balace)*Number(1900)
+      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_Eth_Balace)
 
 
-      let USDT_ContractBalance = USDTContractOf.methods
+
+
+
+      let Presale_USDT_Balace = await USDTContractOf.methods
         .balanceOf(Presale_Contract)
         .call();
-      USDT_ContractBalance = webSupply.utils.fromWei(
-        USDT_ContractBalance.toString()
-      );
+        Presale_USDT_Balace = webSupply.utils.fromWei(Presale_USDT_Balace.toString());
+      console.log("Presale_USDT_Balace", Presale_USDT_Balace);
 
-      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(USDT_ContractBalance)
+      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_USDT_Balace)
 
-      let BUSD_ContractBalance = BUSDContractOf.methods
-        .balanceOf(Presale_Contract)
-        .call();
-      BUSD_ContractBalance = webSupply.utils.fromWei(
-        BUSD_ContractBalance.toString()
-      );
+      
+        let Presale_BUSD_Balance = await BUSDContractOf.methods
+          .balanceOf(Presale_Contract)
+          .call();
+          Presale_BUSD_Balance = webSupply.utils.fromWei(Presale_BUSD_Balance.toString());
+          console.log("Presale_BUSD_Balance", Presale_BUSD_Balance);
 
-      BUSD_ContractBalance=Number(BUSD_ContractBalance)+Number(BUSD_ContractBalance)
+      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_BUSD_Balance)
 
-      let Bnb_ContractBalace = await webSupply.eth.getBalance(Presale_Contract);
-      Bnb_ContractBalace = webSupply.utils.fromWei(
-        Bnb_ContractBalace.toString()
-      );
-      Bnb_ContractBalace=Number(Bnb_ContractBalace)*Number(300)
-      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Bnb_ContractBalace)
+      let Presale_Bnb_Balace = await web3.eth.getBalance(Presale_Contract);
+      Presale_Bnb_Balace = webSupply.utils.fromWei(Presale_Bnb_Balace.toString());
+        console.log("Presale_Bnb_Balace", Presale_Bnb_Balace);
+      Presale_Bnb_Balace=Number(Presale_Bnb_Balace)*Number(300)
+      Toal_Balance_All_Contracts=Number(Toal_Balance_All_Contracts)+Number(Presale_Bnb_Balace)
 
-
+console.log(Toal_Balance_All_Contracts,"Toal_Balance_All_Contracts");
       setToal_All_Contracts(Toal_Balance_All_Contracts)
+      
       if (
-        Toal_Balance_All_Contracts > 101 ||
-        Toal_Balance_All_Contracts < 201
+        Number(Toal_Balance_All_Contracts) > Number(101) &&
+        Number(Toal_Balance_All_Contracts) < Number(201)
       ) {
+      
         setStagePrice(0.000000025);
       } else if (
-        Toal_Balance_All_Contracts > 200 ||
-        Toal_Balance_All_Contracts < 479
+        Number(Toal_Balance_All_Contracts) > Number(200) &&
+        Number(Toal_Balance_All_Contracts) < Number(479)
       ) {
         setStagePrice(0.000000045);
-      } else if (Toal_Balance_All_Contracts > 478) {
+      } else if (Number(Toal_Balance_All_Contracts) > Number(478)) {
         setStagePrice(0.000000085);
       } else {
         setStagePrice(0.00000001);
@@ -240,7 +240,7 @@ function Hero() {
         let Eth_Balace = await web3.eth.getBalance(account);
         Eth_Balace = webSupply.utils.fromWei(Eth_Balace.toString());
         setBalance(Eth_Balace);
-        setTokenName("BNB");
+        setTokenName("ETH");
 
         console.log("Eth_Balace", Eth_Balace);
       }
@@ -316,7 +316,7 @@ function Hero() {
                   .send({
                     from: account,
                   });
-                toast.success("success ! your last transaction is success");
+                toast.success("Success ! your last transaction is success");
                 setSpinner(false);
               }
             } else if (collection === 2) {
@@ -443,7 +443,7 @@ function Hero() {
               _ngcontent-nxk-c11=""
               className="mt-3 mb-2 font-20 fw-semibold claim-title"
             >
-              Claim and Exchange Listings in August . Last Chance to Buy Now!
+              Claim and Exchange Listings After All Phase . Last Chance to Buy Now!
             </p>
           </div>
         </>
@@ -458,17 +458,12 @@ function Hero() {
       <WalletModal show={modalShow} onHide={closeModal} ID={IsId} />
       <div _ngcontent-nxk-c11="" className="background new_bg" id="home">
         <div className="container">
-          <div className="row justify-content-center ">
+          <div className="row justify-content-center " style={{ fontFamily: "'Itim', cursive" }}>
             <div className="col-md-6  text-center">
               <div className="new_b_c">
-                <h1>a unified platform to a decenteralized world</h1>
+                <h1>Empowering a decentralized world through a unified platform.</h1>
                 <p className="haeding_para">
-                  Aishiba aims to create a seamless network that connects
-                  various blockchain platforms, enabling a robust cross-chain
-                  ecosystem for decentralized finance (DeFi). By providing
-                  essential infrastructure and support, Aishiba strives to
-                  empower users with a secure, transparent, and unrestricted
-                  DeFi experience.
+                Aishiba's vision is to establish a seamless network that unites different blockchain platforms, fostering a strong cross-chain ecosystem for decentralized finance (DeFi), while ensuring secure, transparent, and unrestricted DeFi experiences through essential infrastructure and support.
                 </p>
 
                 <div className="d-flex  mt-5 gap-4">
@@ -528,10 +523,11 @@ function Hero() {
                     <div className="progress_bar">
                       <div className="clor"></div>
                       <p className="stage_text">
-                        Next Stage Price :{StagePrice} $
+                        Next Stage Price : 
+                        {StagePrice} $
                       </p>
                     </div>
-                    <p className="text-center mt-3">USDT raised:{Toal_All_Contracts}/$100,000</p>
+                    <p className="text-center mt-3">USDT raised:${Toal_All_Contracts}/$100,000</p>
                   </div>
 
                   <div
@@ -542,7 +538,7 @@ function Hero() {
                       _ngcontent-nxk-c11=""
                       className="text-center mb-3 font-14 dashTitle fw-semibold"
                     >
-                      1AIDOGE = 1 token = 0.00000001 $
+                      1AIDOGE = 0.00000001 $
                     </p>
                     <div
                       _ngcontent-nxk-c11=""

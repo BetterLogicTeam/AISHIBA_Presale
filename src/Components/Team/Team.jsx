@@ -8,7 +8,7 @@ import member4 from "../../assets/marketing.jpg";
 function Team() {
   return (
     <div >
-      <div className="container allupper" id="team">
+      <div className="container allupper" id="team" style={{ fontFamily: "'Itim', cursive" }}>
         <h1
           className="team_title"
           style={{ textAlign: "center", marginBottom: "3rem" }}

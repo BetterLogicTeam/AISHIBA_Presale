@@ -208,7 +208,7 @@ function Footer() {
                 </li>
               </ul>
             </div> */}
-            <div _ngcontent-nxk-c20="" className="col-lg-4 d-none d-lg-block">
+            <div _ngcontent-nxk-c20="" className="col-lg-4 d-none d-lg-block" style={{ fontFamily: "'Itim', cursive" }} >
               <div
                 _ngcontent-nxk-c20=""
                 className="font-14 text-white text-center"

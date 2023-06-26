@@ -24,11 +24,11 @@
     --bs-accordion-btn-focus-box-shadow: transparent !important;
     --bs-accordion-active-color: black !important;
     --bs-accordion-active-bg: transparent !important;
-    font-family: inder !important;
+    font-family: 'Itim', cursive;
 }
 
 .accordion-button{
-    font-family: inder !important;
+    font-family: 'Itim', cursive;
     font-size: 20px !important;
     font-weight: 500;
     background: black !important;
@@ -37,7 +37,7 @@
 }
 
 .accor_heading{
-    font-family: inder !important;
+    font-family: 'Itim', cursive;
     font-size: 16px !important;
     text-align: start;
     font-weight: 500;

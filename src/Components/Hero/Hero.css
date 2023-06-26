@@ -16,7 +16,7 @@
 }
 
 .header-text {
-    font-family: Poppins,sans-serif;
+    font-family: 'Itim', cursive;
 }
 
  .text-tourquise[_ngcontent-nxk-c11] {
@@ -182,7 +182,7 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
 }
 
 .money-btn[_ngcontent-nxk-c11] {
-    width: 23%!important;
+    /* width: 23%!important; */
 }
 
 .btn {
@@ -350,7 +350,7 @@ background-image: linear-gradient(315deg, #ef5734 0%, #ffcc2f 74%);
 /* buton */
 .heading_btn {
     position: relative;
-    font-family: inherit;
+    font-family: 'Itim', cursive;
     text-align: center !important;
     text-transform: capitalize !important;
     font-size: 18px;

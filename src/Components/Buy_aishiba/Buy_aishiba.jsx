@@ -3,7 +3,7 @@ import "./Buy_aishiba.css"
 
 export default function Buy_aishiba() {
   return (
-    <div className='buy_ashi_main'>
+    <div className='buy_ashi_main' style={{ fontFamily: "'Itim', cursive" }}>
 <h1 className='buy_heading_ash'>
     how to buy aishiba 
 </h1>

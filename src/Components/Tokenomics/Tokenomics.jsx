@@ -4,7 +4,7 @@ import gr from "../../assets/gr1.png"
 
 export default function Tokenomics() {
   return (
-    <div className='tken_main_bg' id='tokenomics'>
+    <div className='tken_main_bg' style={{ fontFamily: "'Itim', cursive" }} id='tokenomics'>
     <h1 className='tkon_main_heainf  '>Aishiba Tokenomics</h1>
 
     <div className="container mt-5">
